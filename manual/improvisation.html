@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Last Signal — Manual: Section VI — Improvisation & Repair</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+<div class="starfield" id="starfield"></div>
+<div class="app">
+  <nav class="sidebar" id="sidebar"></nav>
+  <main class="main">
+    <a href="/" class="back-link">← Back to Home</a>
+    <div class="manual-header">
+      <span class="icon">⚠</span>
+      <h1>Section VI: Improvisation & Repair</h1>
+    </div>
+
+    <div class="manual-section">
+      <h2>6.1 The Philosophy of Field Repair</h2>
+      <p>No spacecraft ever carried spare parts for every possible failure. The mass budget simply does not allow it. What we carry instead is versatility — tools, raw materials, and the knowledge to adapt. When a system fails and the replacement part does not exist in our inventory, we have three options: repair it, replace it with something that was never designed for that purpose, or do without it. This section covers the second category.</p>
+      <p><strong>Guiding constraints:</strong> Every repair must be safe (no introducing toxic materials into the habitat), effective (it must work well enough to restore function to a minimum acceptable level), and documented (every modification is recorded with a schematic so we can reverse it when proper parts become available). An undocumented repair is a trap for the crew member who inherits it.</p>
+    </div>
+
+    <div class="manual-section">
+      <h2>6.2 CO₂ Scrubbing Field Fixes</h2>
+      <p>Our LiOH canisters are the most critical consumable after water and oxygen. If they run out, CO₂ will accumulate to toxic levels in approximately 36 hours. There are two field-expedient alternatives.</p>
+      <p><strong>Sodium hydroxide (NaOH) scrubber:</strong> We have 4 kg of sodium hydroxide pellets in the chemistry locker, originally intended for pH adjustment in the water recycling system. NaOH absorbs CO₂ more aggressively than LiOH — 1 kg of NaOH absorbs approximately 0.65 kg of CO₂ compared to LiOH's 0.45 kg. However, NaOH is highly caustic and the reaction is exothermic (it produces heat).</p>
+      <p><strong>Construction:</strong> Take the empty LiOH canister housing. Remove the spent cartridge. Fill the housing with NaOH pellets, layered between fiberglass filter material from the air intake system (the white matting in the ventilation ducts). Seal the housing with tape from the EVA repair kit. Install in the scrubber bank normally. Monitor temperature — the housing should not exceed 45°C. If it does, reduce airflow rate using the manual damper. <strong>Critical safety:</strong> Wear gloves and eye protection when handling NaOH. If it contacts skin, flush with copious water for 15 minutes. Do not use vinegar — the acid-base reaction produces additional heat.</p>
+      <p><strong>Activated carbon augmentation:</strong> The water filtration system uses activated carbon filters that can also absorb CO₂, though less efficiently. If we are out of both LiOH and NaOH, remove the activated carbon cartridge from the water filter, wrap it in breathable fabric (a clean undershirt works), and place it in the airflow path of the ventilation system. This provides approximately 40% of normal scrubbing capacity — enough to slow CO₂ buildup but not stop it. It buys us 2–3 additional days. Combine with reduced crew activity to lower metabolic CO₂ output.</p>
+      <div class="scenario">
+        <strong>Scenario — Soda lime substitute:</strong> Both NaOH and activated carbon are exhausted. Check the medical supplies for calcium hydroxide (used as a dental liner). We have approximately 200g. Grind it to a powder, mix with 50g of silica gel desiccant from the electronics packaging, and pack into a filter housing. This produces a crude soda lime mixture that will absorb CO₂ for approximately 6 hours — enough to give the crew time to construct a more permanent solution or to evacuate to a sealed compartment with remaining scrubber capacity.
+      </div>
+    </div>
+
+    <div class="manual-section">
+      <h2>6.3 Water Loop Repairs</h2>
+      <p>The water recycling system is a closed loop of plumbing, pumps, filters, and membranes. The most common failure modes are: pump cavitation (air in the lines), membrane fouling (biological growth or mineral scaling), and line blockages (debris from the impact).</p>
+      <p><strong>Pump cavitation:</strong> If the water pump sounds rough or the flow rate fluctuates, there is air in the system. Close the isolation valve at the wastewater tank, open the bleed valve at the highest point of the loop (under the galley sink), and run the pump for 30 seconds. Air will bubble out. Close the bleed valve and reopen the isolation valve. If cavitation persists, there may be a leak allowing air ingress — check all visible joints with a soap solution (1 part dish soap to 10 parts water) and look for bubbles.</p>
+      <p><strong>Membrane cleaning:</strong> If the reverse osmosis membrane output drops below specification, it may be fouled with mineral scale. Prepare a cleaning solution: 1 liter of warm water mixed with 10g of citric acid (from the food preservation supplies). Close the membrane bypass valve. Circulate the cleaning solution through the membrane for 30 minutes using the manual recirculation pump. Flush with clean water for 15 minutes. This restores approximately 70% of nominal output. Do not use chlorine bleach — it will destroy the membrane irreversibly.</p>
+      <p><strong>Line blockage:</strong> If a water line is blocked, locate the blockage by disconnecting the line at both ends and blowing through it. If blocked, feed a length of wire (from the electrical repair kit) through the line to break up the obstruction. Flush with pressurized water from the hand-pump sprayer (originally for cleaning solar panels). If the blockage is in a rigid pipe section, the pipe may need to be cut and replaced with flexible tubing from the medical IV drip sets — we have 20 meters of sterile tubing that can be repurposed for low-pressure water lines.</p>
+    </div>
+
+    <div class="manual-section">
+      <h2>6.4 Structural Patches</h2>
+      <p>Our hull has three types of damage: micrometeorite punctures (under 5 mm), debris impact craters (5 mm to 5 cm), and structural cracks (linear fractures from the main debris impact). Each requires a different repair approach.</p>
+      <p><strong>Micrometeorite punctures — epoxy injection:</strong> For holes under 5 mm, clean the area with isopropyl alcohol. Mix the two-part epoxy from the hull repair kit (S-1073 aerospace epoxy, stored in the aft locker). Apply a small drop over the hole. Cover with a 2 cm square of aluminum tape. The epoxy will cure in 30 minutes at 20°C. These patches hold at up to 0.5 atm differential pressure indefinitely.</p>
+      <p><strong>Debris impacts — patch plate method:</strong> For holes between 5 mm and 5 cm, cut a patch plate from the spare aluminum sheet in the engineering bay (0.8 mm thickness, stored behind Panel 7). The patch must overlap the damaged area by at least 2 cm on all sides. Drill matching holes in both the patch and the hull using the cordless drill (low speed, light pressure — we are in vacuum and the drill bit will not overheat). Secure with bolts from the fastener kit, with a layer of high-temperature silicone gasket sealant between the patch and the hull. Torque bolts to 8 N·m — do not overtighten, as the aluminum will strip.</p>
+      <p><strong>Structural cracks — strap reinforcement:</strong> For cracks longer than 5 cm, a patch plate alone will not distribute the load. Instead, apply three overlapping straps of aluminum across the crack, each 3 cm wide and spaced 5 cm apart. Each strap is bolted on both sides of the crack. Then cover the entire area with the epoxy-and-fiberglass cloth method: paint a layer of epoxy onto the hull, lay down a sheet of fiberglass cloth (from the insulation wrapping in the avionics bay), paint another layer of epoxy on top, and repeat for three layers. This creates a composite patch that is stronger than the original hull at the repair site. Cure time is 2 hours at 20°C.</p>
+    </div>
+
+    <div class="manual-section">
+      <h2>6.5 Field-Expedient Tools</h2>
+      <p>When the right tool is not available, make one. Here are the most useful field-expedient tools we have developed:</p>
+      <ul>
+        <li><strong>Wire bending jig:</strong> A piece of aluminum scrap with holes drilled at 5 mm intervals. Insert a wire into a hole and bend to the desired angle. Useful for making custom clips, spring retainers, and alignment pins.</li>
+        <li><strong>Vacuum-safe scraper:</strong> A plastic spatula from the galley, sharpened on the edge with a file. Plastic does not shed metal particles that could short-circuit electronics. Use for cleaning sealant residues and old gaskets.</li>
+        <li><strong>Heat sink clamp:</strong> Two aluminum plates with a screw through the center. Clamp over a soldering point to prevent heat from traveling into sensitive electronics. Essential for any electrical repair near circuit boards.</li>
+        <li><strong>Magnetic retrieval tool:</strong> A rare-earth magnet from a speaker, taped to a telescoping antenna rod. Indispensable for retrieving dropped screws and bolts in zero-G, where they drift into every impossible crevice.</li>
+        <li><strong>Vacuum cleaner filter adapter:</strong> The cabin vacuum cleaner's hose fits over the CO₂ scrubber intake port. In an emergency, use it to clear airborne particles after a fire or a hull breach that introduced dust. The HEPA filter captures particles down to 0.3 microns.</li>
+      </ul>
+    </div>
+
+    <div class="manual-section">
+      <h2>6.6 The Repair Log</h2>
+      <p>Every repair, modification, or improvised solution must be documented in the Engineering Logbook. The format is standard:</p>
+      <ul>
+        <li><strong>Date and ship's time</strong></li>
+        <li><strong>System affected</strong> (e.g., ECLSS, water recovery, hull Panel 9)</li>
+        <li><strong>Failure description</strong> (observable symptoms, not diagnosis)</li>
+        <li><strong>Root cause</strong> (what actually broke — identified to the best of our ability)</li>
+        <li><strong>Repair performed</strong> (materials used, method, crew involved)</li>
+        <li><strong>Test results</strong> (does it work? at what level? any observed issues?)</li>
+        <li><strong>Expected lifespan</strong> of the repair (hours, days, cycles)</li>
+        <li><strong>Signatures</strong> of all crew members involved</li>
+      </ul>
+      <p>A repair that is not logged did not happen. If you are incapacitated and a crew member has to take over your work, the log is their only guide to what you have done. Write clearly, include diagrams where helpful, and never assume that your improvised solution is obvious. In a crisis, the obvious is the first thing that disappears.</p>
+    </div>
+
+  </main>
+</div>
+<script src="/src/main.js"></script>
+<script src="/src/sidebar.js"></script>
+</body>
+</html>

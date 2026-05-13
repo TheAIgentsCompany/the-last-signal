@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Last Signal — Manual: Section II — Emergency EVA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+<div class="starfield" id="starfield"></div>
+<div class="app">
+  <nav class="sidebar" id="sidebar"></nav>
+  <main class="main">
+    <a href="/" class="back-link">← Back to Home</a>
+    <div class="manual-header">
+      <span class="icon">⚠</span>
+      <h1>Section II: Emergency EVA</h1>
+    </div>
+
+    <div class="manual-section">
+      <h2>2.1 Suit Systems Overview</h2>
+      <p>The ISV <em>Odyssey</em> carries four Extravehicular Mobility Units (EMUs). Each suit is a self-contained spacecraft rated for 8 hours of nominal operation with the following critical subsystems:</p>
+      <ul>
+        <li><strong>Primary Life Support System (PLSS):</strong> O₂ tank — 1.2 kg at 7,000 psi, providing approximately 6 hours at moderate exertion. CO₂ scrubbing via a small LiOH cartridge (3-hour capacity integrated suit, 6-hour with the extended-duration backpack). Water cooling loop with 0.8 liters of coolant for thermal regulation.</li>
+        <li><strong>Suit Pressure:</strong> Maintained at 29.6 kPa (4.3 psi) — pure oxygen environment to prevent decompression sickness during EVA. The suit pressure alarm sounds if pressure drops below 25 kPa. You have approximately 60 seconds of useful consciousness at suit pressure below 15 kPa before hypoxia sets in.</li>
+        <li><strong>Communications:</strong> UHF radio with 2W output. Line-of-sight range of approximately 10 km in open space. The suit-to-ship relay extends this to the full work envelope. If you lose comms, you have lost your primary safety tether. Abort the EVA immediately unless you are physically tethered to the ship.</li>
+        <li><strong>Emergency O₂ Reserve:</strong> A 30-minute O₂ bottle mounted on the chest of the suit. Activated by pulling the red ring on the left chest panel. This is your "get home" gas. Use it only if the primary system fails or is exhausted.</li>
+      </ul>
+    </div>
+
+    <div class="manual-section">
+      <h2>2.2 Tether Protocol</h2>
+      <p>In orbit, there is no friction, no anchor, and no up or down. A loose crew member will drift away at whatever velocity they last had — even a gentle push of 0.1 m/s translates to 360 meters of displacement per hour. The tether is not optional. It is the only thing connecting you to the ship and to life.</p>
+      <p><strong>Primary rule:</strong> Always maintain at least one physical attachment to the hull. The standard tether is 15 meters of Kevlar-reinforced braided line rated for 2,000 kg tensile strength. It has a manual locking carabiner on each end and an inertia reel that auto-tensions at 50 meters extension. Use the waist D-rings — not the suit-mounted ones — as your primary attachment point.</p>
+      <p><strong>Dual-tether rule:</strong> When moving around the hull, use two tethers in leapfrog fashion. Attach Tether A to your current position, move to new position, attach Tether B, then detach Tether A. Never be the loose end. This is your single most important habit to develop. Practice it in the simulator before attempting external work.</p>
+      <p><strong>Tether inspection:</strong> Before every EVA, inspect the full length of your tether for cuts, fraying, heat damage, or chemical discoloration. A compromised tether can fail catastrophically under load. If in doubt, replace it. We have six spare tethers in the airlock equipment locker.</p>
+      <div class="scenario">
+        <strong>Scenario — Tether Freeze:</strong> The locking carabiner on your primary tether has been exposed to vacuum for over an hour and the mechanism has cold-welded shut. Do not force it — cold-welded titanium can fuse at the molecular level. Instead, use your secondary tether to secure yourself, then use the handle of your multi-tool to gently tap the joint. The vibration will often break the cold weld. If that fails, return to the airlock with both tethers attached — the thermal cycling of re-pressurization will release the weld.
+      </div>
+    </div>
+
+    <div class="manual-section">
+      <h2>2.3 Lost-in-Space Procedures</h2>
+      <p>If you become untethered from the ship — by tether failure, accidental release, or a suit malfunction during translation — you will drift at whatever relative velocity you had at separation. The <em>Odyssey</em> is in low Mars orbit. The difference between a safe recovery and a death sentence is measured in minutes and meters per second.</p>
+      <p><strong>Immediate actions (in order):</strong></p>
+      <ol>
+        <li><strong>DO NOT PANIC.</strong> Panic increases oxygen consumption by up to 400%. Breathe slowly and deliberately. You have approximately 6 hours of O₂ in the primary system. That is enough time if you act methodically.</li>
+        <li><strong>Stop your rotation.</strong> Use the Hand Control Module (HCM) on the left wrist to fire your nitrogen thrusters in the direction opposite your spin. A slow spin will make you disoriented and unable to judge distances. A stopped spin gives you a stable visual reference.</li>
+        <li><strong>Locate the ship.</strong> The <em>Odyssey</em> is the largest object in your visual field. Look for the solar arrays — they are highly reflective and oriented toward the sun. If you do not see the ship, you may be on the nightside. Wait for orbital rotation — the ship will come into view within 45 minutes at our current orbit.</li>
+        <li><strong>Signal by radio.</strong> Key the UHF on channel 1. State your name, your estimated distance from the ship, and your rate of drift. Even if no one answers, keep transmitting at 30-second intervals. We are listening.</li>
+        <li><strong>If you have maneuvering capability:</strong> Use the SAFER (Simplified Aid For EVA Rescue) backpack. It provides 15 m/s of delta-V in the form of six nitrogen jets. Aim toward the ship and fire in short 0.5-second bursts. Conserve fuel — you need at minimum 2 m/s to match velocity for a controlled approach.</li>
+      </ol>
+      <p><strong>If recovery is impossible within O₂ limits:</strong> This is the hardest instruction in this manual. Conserve your oxygen by reducing physical activity. If the ship cannot intercept your trajectory and you cannot maneuver back, you have approximately the duration of your O₂ supply to make peace, record your final observations, and say goodbye over the radio. Your suit will record your final words. We will find them when — if — we recover you.</p>
+    </div>
+
+    <div class="manual-section">
+      <h2>2.4 Damage Inspection Protocol</h2>
+      <p>After the debris strike, we must conduct regular external inspections to assess hull integrity, micrometeorite damage, and the condition of critical external systems. Every inspection follows a standard pattern:</p>
+      <ul>
+        <li><strong>Photo documentation:</strong> Every damage site must be photographed from at least three angles. Use the suit-mounted helmet camera. Verbal description is not sufficient — images allow us to measure crack propagation and micrometeorite impact patterns over time.</li>
+        <li><strong>Depth and size measurement:</strong> Use the laser rangefinder on the suit's wrist module to measure the dimensions of any damage. For small impacts (under 2 cm), a standard hull patch can be applied. For impacts over 5 cm, a structural patch with backing plate is required. For anything larger than 10 cm, seal the compartment on the interior side first, then patch externally.</li>
+        <li><strong>Whipple shield assessment:</strong> Our hull has a Whipple shield — a thin aluminum outer layer that disrupts incoming debris before it hits the pressure hull. Post-strike, check that the standoff distance between the Whipple layer and the pressure hull is maintained. If the shield has collapsed against the hull, the impact protection is effectively gone.</li>
+        <li><strong>Report structure:</strong> Every inspection report must include: location (using the hull grid coordinate system), size and shape of damage, depth assessment, photographic IDs, and a recommendation for repair timeline (immediate / within 24 hours / monitor).</li>
+      </ul>
+    </div>
+
+    <div class="manual-section">
+      <h2>2.5 EVA Emergency Scenarios</h2>
+      <div class="scenario">
+        <strong>Suit Pressure Drop:</strong> You feel your suit suddenly tighten as the pressure drops. The alarm is chirping. Check the pressure gauge on your left wrist. If it is below 25 kPa, you have a leak. Seal the leak with the emergency patch kit in your thigh pocket — a 5cm adhesive patch that bonds on contact. If you cannot find the leak, close your helmet visor and activate emergency O₂ reserve. Return to the airlock immediately. Do not stop to finish the inspection.
+      </div>
+      <div class="scenario">
+        <strong>Cooling Loop Failure:</strong> You stop sweating but feel progressively hotter. The display shows coolant temperature rising above 30°C. Your body is heating up and cannot dump heat in vacuum without the cooling loop. Reduce exertion to absolute minimum. Return to the airlock. If the suit internal temperature exceeds 38°C, open the helmet vent valve to allow emergency evaporative cooling — this vents suit atmosphere but buys you 10-15 minutes before CO₂ buildup forces re-pressurization.
+      </div>
+      <div class="scenario">
+        <strong>Communications Blackout:</strong> Your radio goes silent. You can hear nothing but your own breathing. Check the antenna connection on the chest unit — it may have been sheared off during translation. If the antenna is gone, use hand signals (if another crew member is visible) or tap your helmet against the hull in Morse code (three short taps = "need help", one long tap = "status OK"). Return to airlock immediately if you cannot re-establish contact.
+      </div>
+    </div>
+
+  </main>
+</div>
+<script src="/src/main.js"></script>
+<script src="/src/sidebar.js"></script>
+</body>
+</html>

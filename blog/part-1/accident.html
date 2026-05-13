@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Accident — Part I | The Last Signal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+<div class="starfield" id="starfield"></div>
+<div class="app">
+  <nav class="sidebar" id="sidebar"></nav>
+  <main class="main">
+
+    <div class="chapter-nav">
+      <a href="/index.html">&larr; Home</a>
+      <span style="font-size:0.72rem;color:var(--text-muted);">Part I — Lost</span>
+      <a href="/blog/part-1/ship.html">The Ship That Remains &rarr;</a>
+    </div>
+
+    <div class="chapter-label">Part I — Lost</div>
+    <h1>The Accident</h1>
+    <p class="subtitle">The debris strike, the damage assessment, and the first 24 hours of survival.</p>
+
+    <div class="meta-line">
+<strong>ISV Odyssey Official Log — Entry 001</strong><br>
+Commander Elena Voss, recording<br>
+Date: April 14, 2057 — 09:47 UTC<br>
+Distance from Earth: 141,982,347 km<br>
+Crew Status: 4 survivors out of 8 (see casualty report below)<br>
+Status: Critical — emergency protocols engaged
+    </div>
+
+    <h2>0. The Moment of Impact</h2>
+    <p>At <strong>09:41:18 UTC</strong>, I was in the galley reviewing the morning water-recycling report when the hull rang like a bell. Not the kind of dull thud you hear in training simulators. It was a sustained, metallic scream that travelled through the deck plates into my boots and up my spine. The lights flickered — all of them, simultaneously, across every compartment — and then the emergency alarms engaged. Red strobes. The proximity alert I had hoped never to hear.</p>
+
+    <p>The <em>Odyssey</em> shook for three full seconds. In zero g, that means everything not strapped down drifts instantly into mid-air: coffee bulbs, data pads, a loose stylus that I watched float past my face as if in slow motion. Then the artificial gravity (or what remained of it) surged back unevenly, and I hit the deck with my shoulder. That's how I knew we had lost the starboard centrifuge ring rotation — the gravity vector had shifted by roughly four degrees.</p>
+
+    <blockquote>
+      "I've run the debris-containment drills a hundred times. I've sat through every NASA, ESA, and CNSA simulation on the books. Nothing prepares you for the sound of your ship dying around you."
+      <strong>— Commander Elena Voss, personal log, 09:48 UTC</strong>
+    </blockquote>
+
+    <h2>1. First Damage Assessment (09:42 – 10:15 UTC)</h2>
+    <p>I reached the bridge in under ninety seconds. Chief Engineer <strong>Hiroshi Tanaka</strong> was already at the diagnostics station, his hands moving across three holographic panels simultaneously. He didn't look up when I entered. He just said: "Starboard aft. Something hit us. Big."</p>
+
+    <p>The sensor logs tell the story clearly in hindsight: a debris cloud — likely the remnants of a 2019-era launch vehicle upper stage that had been in a decaying high-elliptical orbit — crossed our trajectory at a relative velocity of approximately 3.2 km/s. The tracking systems detected it at T-minus 2.1 seconds. That is not enough time to maneuver. That is not enough time to do anything except brace for impact.</p>
+
+    <p>The primary strike punctured the hull in three locations: the starboard cargo bay (Section 17-Alpha), the secondary radiator array (Section 9-Delta), and — most critically — the forward habitation module where the crew quarters and medical bay are housed (Section 4-Gamma). The latter breach caused immediate, catastrophic decompression in those compartments.</p>
+
+    <h2>2. Casualty Report</h2>
+    <p>I have to write this down even though every word feels like a failure I will carry for the rest of my life — however long that may be.</p>
+
+    <ul>
+      <li><strong>Dr. Anya Petrova</strong> (Mission Specialist, Astrobiology) — Section 4-Gamma. Deceased. The medical bay suffered direct impact. Her suit beacon went silent at 09:42:04.</li>
+      <li><strong>Lt. Commander James Okonkwo</strong> (Flight Engineer) — Section 4-Gamma. Deceased. Was in his quarters off-duty. No emergency response possible due to breach isolation.</li>
+      <li><strong>Dr. Sophia Chen</strong> (Geologist) — Section 17-Alpha (cargo bay). Deceased. She was cataloguing Mars surface samples. The cargo bay was shredded.</li>
+      <li><strong>Corporal Marcus Webb</strong> (Crew Specialist) — Section 4-Gamma. Deceased. Resting in the recreation alcove adjacent to the crew quarters.</li>
+    </ul>
+
+    <p><strong>Survivors:</strong> Myself (Commander Elena Voss), Chief Engineer Hiroshi Tanaka, Dr. Amara Singh (Medical Officer — she was in the lower-deck infirmary, which remained intact), and Lieutenant Raj Patel (Navigation — was on the bridge during the strike, thrown hard against a console but conscious and recovering). Four of us. Half the crew. Gone in three seconds.</p>
+
+    <h2>3. Immediate Actions (10:15 – 14:00 UTC)</h2>
+    <p>At 10:22 UTC, I ordered:<br>
+    <strong>Phase 1 — Secure &amp; Contain:</strong></p>
+
+    <ul>
+      <li>Hiroshi sealed all breach-adjacent bulkheads and initiated emergency foam-injection in Sections 17-Alpha and 4-Gamma. The foam holds for approximately 72 hours under standard temperature. We need a permanent patch by then.</li>
+      <li>Amara set up a triage station in the lower-deck infirmary. Raj has a hairline fracture in his left radius and a concussion. Amara herself has minor lacerations on her forearm from flying debris. Hiroshi and I are physically unharmed, though I suspect the psychological bruises will take longer to assess.</li>
+      <li>I established a hard comms blackout on non-essential systems to conserve power for life support and structural integrity monitoring.</li>
+    </ul>
+
+    <p><strong>Phase 2 — Resource Inventory (14:00 – 23:00 UTC):</strong><br>
+    The next ten hours were spent cataloguing what we have left. The results are sobering.</p>
+
+    <p><strong>Life Support:</strong> The primary O₂ generator is online but damaged — output reduced to 74% of nominal capacity. The CO₂ scrubbers in the starboard loop are offline entirely; we are down to the port-side units, which can handle three people indefinitely but begin to degrade with four. Without repairs, we have approximately 405 days of breathable atmosphere at current metabolic consumption rates. Water recycling loops are intact at 88% efficiency, but the reserve tanks took a hit — a micrometeorite puncture in the starboard holding tank cost us roughly 200 liters before Hiroshi could isolate the line.</p>
+
+    <p><strong>Power:</strong> The primary reactor (RTG array) is generating at 62% capacity. We lost the secondary radiator array, which means we cannot dump waste heat efficiently. We have instituted a rolling brownout schedule: habitation compartments cycle between active and minimal-power states every four hours. The bridge, the infirmary, and the engineering bay remain powered continuously.</p>
+
+    <p><strong>Food:</strong> The pantry stores were largely in the forward hab module. We lost approximately 60% of our food supply. What remains in the lower-deck stores — freeze-dried meals, nutritional supplements, and emergency ration packs — gives us approximately 320 days of adequate caloric intake for four people. After that, we drop to survival rations: roughly 1,200 calories per person per day, which buys us another 90 days. Beyond 410 days, we starve.</p>
+
+    <p><strong>Propulsion:</strong> The main fusion drive is undamaged — a small miracle, given that the starboard radiator sits adjacent to the engine housing. However, the attitude control thrusters on the starboard side show degraded performance. Our delta-v budget remains intact for one major burn, but our ability to fine-tune trajectory is compromised. More on this in the full ship survey.</p>
+
+    <h2>4. The First Night (23:00 – 06:00 UTC, April 15)</h2>
+    <p>We held our first official crew meeting at 23:15 UTC. Gather around the engineering display — the only intact holographic projector on the ship — because it felt important to see each other's faces in the dim blue light. Four faces. Where there should have been eight.</p>
+
+    <p>I laid out the facts as I knew them. I did not sugarcoat. I told them about the food, the water, the power constraints, the 405-day clock. I told them that Earth is 142 million kilometers away — at best-case conjunction, that's a 6- to 8-month journey under full power. With our damaged radiator and compromised propulsion, we might not even be able to accelerate enough to make the trip before life support runs out. I told them that I did not know if rescue would come — the last message we received from Houston was a routine telemetry packet on April 12, and our main communications antenna was damaged in the strike. We can receive, but we cannot transmit at sufficient power to reach Earth.</p>
+
+    <p>Then I asked for their help.</p>
+
+    <p>Hiroshi spoke first. Calm, methodical, as always. He said: "We have a ship. It is damaged, but it is not dead. Give me two weeks and I will give you back our radiators, our thrusters, and a plan." Amara asked about medical stability. Raj — still pale, arm in a sling, but with that sharp look in his eyes that I've learned to trust — asked about navigation. "Even without full comms," he said, "I can calculate a return trajectory using celestial sightings. It's slower, but it's possible."</p>
+
+    <p>I assigned roles: Hiroshi oversees all repairs. Amara manages health, rationing, and psychological welfare. Raj plots our position and investigates passive navigation. I coordinate, command, and hold us together.</p>
+
+    <p>At 02:30 UTC, I walked a full circuit of the habitable sections of the <em>Odyssey</em>. The ship is quiet in a way it never was before — the hum of life support is thinner, the ventilation softer, the footsteps on the metal grating echoing in compartments that used to be full of conversation. I passed the sealed bulkhead that leads to Section 4-Gamma. I stood there for a long moment. On the other side of that door are the remains of four good people who trusted me to bring them to Mars and back.</p>
+
+    <p>I will not let their deaths be meaningless.</p>
+
+    <h2>5. What We Know Now (06:00 UTC, April 15)</h2>
+    <p>Twenty-four hours after impact. We have a baseline. We have a plan. We have a clock. Here is what I know:</p>
+
+    <ul>
+      <li>The debris cloud that struck us was the upper stage of a Titan IV-B rocket launched in 2011, which had fragmented into at least 47 tracked pieces. We hit the densest part of the cloud at the worst possible angle.</li>
+      <li>Our structural integrity is compromised but stable. The emergency foam is holding. Hiroshi believes he can fabricate permanent hull patches from scavenged interior panelling and a roll of self-curing composite in the tool bay.</li>
+      <li>We have 405 days of life support at best. Earth is 142 million kilometers away. At maximum safe acceleration (accounting for the damaged radiator), the trip would take approximately 240 days. That leaves 165 days of margin for delays, course corrections, and emergencies.</li>
+      <li>It is not enough margin. I know that. They know that. But it is what we have, and I will make it work, or I will die trying.</li>
+    </ul>
+
+    <p>This is the first entry in what I am calling <strong>The Last Signal</strong> — a record of our efforts to survive, to repair, and to return. If these logs ever reach Earth, I want whoever reads them to know that we did not give up. We did not break. We looked into the void, and we kept fighting.</p>
+
+    <p>This is Commander Elena Voss, ISV <em>Odyssey</em>, signing off for now. Next entry: a full survey of the ship that remains — the machine we must coax back to life, one system at a time.</p>
+
+    <hr>
+
+    <div class="chapter-nav">
+      <a href="/index.html">&larr; Home</a>
+      <a href="/blog/part-1/ship.html">Continue to: The Ship That Remains &rarr;</a>
+    </div>
+
+    <p style="text-align:center;color:var(--text-muted);font-size:0.75rem;margin-top:3rem;">
+      The Last Signal — A Space Chronicle by Commander Elena Voss &middot;
+      Part I: The Accident
+    </p>
+  </main>
+</div>
+<script src="/src/sidebar.js"></script>
+<script src="/src/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Last Signal — Manual: Section IV — Navigation Without Comms</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+<div class="starfield" id="starfield"></div>
+<div class="app">
+  <nav class="sidebar" id="sidebar"></nav>
+  <main class="main">
+    <a href="/" class="back-link">← Back to Home</a>
+    <div class="manual-header">
+      <span class="icon">⚠</span>
+      <h1>Section IV: Navigation Without Comms</h1>
+    </div>
+
+    <div class="manual-section">
+      <h2>4.1 The Problem</h2>
+      <p>When we lost our primary communications array, we also lost our link to the Deep Space Network and the precise ephemeris updates that ground control sends daily. We can no longer request orbital position corrections, receive updated trajectory models, or synchronize our clock with Earth. The ship's inertial navigation system (INS) will remain accurate for approximately 72 hours before gyroscopic drift accumulates enough error to make it unreliable. After that, we navigate by the stars — the same way humanity crossed the oceans for thousands of years.</p>
+      <p>This section covers celestial navigation techniques adapted for deep space, dead reckoning protocols, and contingency procedures for complete instrument failure. Every crew member must be able to determine the ship's approximate attitude and orientation using only a sextant, a star chart, and basic mathematics.</p>
+    </div>
+
+    <div class="manual-section">
+      <h2>4.2 Celestial Orientation — Finding Your Bearings</h2>
+      <p>In cislunar and interplanetary space, the standard reference frame is based on the ecliptic plane — the plane of Earth's orbit around the Sun. The first skill is to identify this plane using the planets as natural markers.</p>
+      <p><strong>Using the Sun as a reference:</strong> The Sun is your most reliable attitude reference. Its position defines the ship-to-Sun vector, which is used for thermal management (always point the radiators away from the Sun), power generation (keep the solar arrays normal to the Sun vector), and orientation. The ship's sun sensors will give you Sun vector to within 0.1° as long as they are operational. If they fail, you can determine the Sun's position manually by observing shadows inside the module: the sharpest, highest-contrast shadow indicates the direction to the Sun.</p>
+      <p><strong>Identifying target bodies:</strong> Mars is your primary navigational reference. It is the large orange-red disk that does not twinkle. In our current orbit, we pass over the same ground track every 2.3 hours. You can use the terminator line — the boundary between day and night on Mars's surface — to confirm your orbital phase. If the terminator is moving east to west across your field of view, you are in a prograde orbit. If it moves west to east, you are in retrograde — this needs immediate correction as it requires significantly more fuel to maintain.</p>
+      <p><strong>Star field identification:</strong> The <em>Odyssey</em>'s onboard star tracker database contains 4,000 reference stars. In normal operation, the computer matches observed star patterns against this database to determine attitude to arcsecond precision. If the star tracker is damaged, you can perform manual star identification using the printed star charts in the navigation locker. Focus on the 20 brightest navigational stars — Sirius, Canopus, Alpha Centauri, Vega, Rigel, Capella, Procyon, Betelgeuse, Altair, Aldebaran, and their neighbors. Learn to identify them by color and brightness: Betelgeuse is distinctly red, Rigel is blue-white, Sirius is a brilliant white.</p>
+    </div>
+
+    <div class="manual-section">
+      <h2>4.3 Solar Diameter Triangulation</h2>
+      <p>This technique provides a rough distance estimate when you have no radar or lidar ranging capability. The Sun's apparent angular diameter changes predictably with distance. At 1 AU (the Earth-Sun distance), the Sun's angular diameter is approximately 0.533° (31.95 arcminutes). At 1.5 AU, it shrinks to 0.355°. The relationship follows an inverse square law for angular size.</p>
+      <p><strong>Procedure:</strong></p>
+      <ol>
+        <li>Use the sextant from the nav locker to measure the angular diameter of the Sun. <strong>Critical safety warning:</strong> Never look directly at the Sun through the sextant without the solar filter attached. The concentrated light will permanently damage your retina in milliseconds. The sextant has a built-in dark glass filter — ensure it is engaged before any solar observation.</li>
+        <li>Record the measurement in arcminutes. Formula: Distance (AU) = 31.95 ÷ measured arcminutes.</li>
+        <li>Cross-reference with your expected position from the last known trajectory. If the measured distance differs from expected by more than 0.05 AU, we may have experienced an uncorrected perturbation from the debris impact and need to re-calculate our orbital elements.</li>
+        <li>Log all measurements in the navigation logbook with date, ship's time, and observer name. Multiple measurements over consecutive days give us a velocity vector, not just a position fix.</li>
+      </ol>
+      <p><strong>Venus and Jupiter triangulation:</strong> When Mars is not visible, use Venus (angular diameter varies from 9.7 to 66 arcseconds) or Jupiter (angular diameter approximately 40 arcseconds at 5.2 AU) as secondary references. Their apparent sizes change more slowly with distance, making them less precise but useful as sanity checks.</p>
+    </div>
+
+    <div class="manual-section">
+      <h2>4.4 Dead Reckoning</h2>
+      <p>Dead reckoning is navigation by integrating velocity over time from a known starting position. It is inherently imprecise — errors accumulate with every second — but it is better than being lost.</p>
+      <p><strong>Fundamental equation:</strong> New position = Old position + (velocity × elapsed time) + (0.5 × acceleration × elapsed time²). For our purposes, acceleration from thruster firings is the dominant term. Constant orbital drift is negligible over short periods.</p>
+      <p><strong>Logging every burn:</strong> Every thruster firing, no matter how small, must be recorded in the navigation log. Log format: Time (UTC), Burn duration (seconds), Thruster ID (use the thruster numbering diagram on the nav station), Estimated delta-V (from the accelerometer readout or calculated from burn time × known thrust). Without this log, dead reckoning becomes guesswork.</p>
+      <p><strong>Position update frequency:</strong> Dead reckoning position should be updated at least once per watch (every 4 hours) using whatever observational data is available. If no observations are possible (e.g., during a dust storm on Mars blocking visible references), increase the update frequency for the dead reckoning propagation — shorten the interval between calculations to reduce error buildup.</p>
+    </div>
+
+    <div class="manual-section">
+      <h2>4.5 Instrument Failure Contingency</h2>
+      <p>If the gyroscopes, accelerometers, star tracker, sun sensors, and radar all fail simultaneously — a scenario we must plan for — we are down to the most primitive navigation tools available to human civilization. Fortunately, we carry them in the navigation locker.</p>
+      <p><strong>Mechanical sextant:</strong> Our backup sextant is a hand-held metal instrument with no electronics. It measures angles between celestial bodies to a precision of 0.1 arcminutes under steady hands. Practice with it while the electronics are still working — compare your manual measurements to the computer's values. You need at least 50 practice measurements before you can trust your readings in an emergency.</p>
+      <p><strong>Manual chronometer:</strong> Our mechanical backup clock loses approximately 2 seconds per day — a known drift rate. The chronometer log (inside the lid) tracks cumulative drift. Always apply the drift correction before computing positions. An error of 1 second in time translates to approximately 0.5 km of position error in Earth orbit, and much more in interplanetary space where relative velocities are higher.</p>
+      <p><strong>Paper star charts:</strong> The printed star charts in the locker cover the full celestial sphere at three scales: wide-field (30° × 30°) for orientation, medium-field (10° × 10°) for identification, and close-up (2° × 2°) for fine attitude determination. All charts are marked with the ecliptic plane, the galactic equator, and the positions of major solar system bodies as of our launch date. Adjustments for planetary motion must be calculated manually — we have printed ephemeris tables for Mars, Earth, Jupiter, and Venus through 2059.</p>
+      <p><strong>Final fallback — the handrail rule:</strong> If all instruments are dead and you cannot determine your position, your only option is to maintain your current orbit and wait. The <em>Odyssey</em> is in a stable orbit around Mars. Do not fire thrusters. Do not attempt maneuvers. Stay in the orbit you have. A known but uncertain orbit is infinitely preferable to an unknown trajectory. We will attempt to re-establish position through long-baseline radio observations when the comms array is repaired. Until then, hold station and conserve everything.</p>
+    </div>
+
+  </main>
+</div>
+<script src="/src/main.js"></script>
+<script src="/src/sidebar.js"></script>
+</body>
+</html>

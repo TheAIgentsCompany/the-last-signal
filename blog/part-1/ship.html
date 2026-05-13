@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Ship That Remains — Part I | The Last Signal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+<div class="starfield" id="starfield"></div>
+<div class="app">
+  <nav class="sidebar" id="sidebar"></nav>
+  <main class="main">
+
+    <div class="chapter-nav">
+      <a href="/blog/part-1/accident.html">&larr; The Accident</a>
+      <span style="font-size:0.72rem;color:var(--text-muted);">Part I — Lost</span>
+      <a href="/blog/part-2/daily-log.html">Daily Log &rarr;</a>
+    </div>
+
+    <div class="chapter-label">Part I — Lost</div>
+    <h1>The Ship That Remains</h1>
+    <p class="subtitle">A full technical survey of the damaged ISV Odyssey — its systems, its wounds, and the path back to spaceworthiness.</p>
+
+    <div class="meta-line">
+<strong>ISV Odyssey Technical Survey — Entry 002</strong><br>
+Commander Elena Voss &amp; Chief Engineer Hiroshi Tanaka, co-authors<br>
+Date: April 15–20, 2057<br>
+Scope: Full systems inventory and damage assessment<br>
+Status: Critical but recoverable — see system-by-system breakdown below
+    </div>
+
+    <h2>1. Overview: A Ship Divided</h2>
+    <p>The <strong>ISV Odyssey</strong> (Interplanetary Space Vehicle, registry ISV-01) is a fifth-generation deep-space vessel commissioned in 2048 by the International Space Exploration Consortium. She is 127 meters in length, with a crew capacity of eight, a dry mass of 340 metric tons, and a fully fueled mass of 890 metric tons. She was designed for a 28-month round trip to Mars with a 60-day surface stay. She is, to put it simply, one of the most complex machines ever built by human hands — and she is now held together by emergency foam, sheer will, and the expertise of a single chief engineer.</p>
+
+    <p>This survey covers every major system on the <em>Odyssey</em>. For each system, we record its pre-incident baseline, current status, criticality to survival, and repair priority. Hiroshi and I walked every accessible compartment over five days — April 15 through April 20 — and what follows is the complete record of our findings.</p>
+
+    <blockquote>
+      "A ship is not a home. A ship is a machine that keeps you alive in a place where you cannot breathe, cannot drink, and cannot survive for more than ninety seconds without its protection. Every system that fails brings us one step closer to vacuum. Every repair buys us another day."
+      <strong>— Chief Engineer Hiroshi Tanaka, engineering log, April 16, 2057</strong>
+    </blockquote>
+
+    <h2>2. Structural Integrity</h2>
+    <p><strong>Rating: 3/10 — Compromised but stable</strong></p>
+    <p>The debris strike caused three hull breaches (Sections 4-Gamma, 9-Delta, and 17-Alpha) and induced what Hiroshi calls "microfracture propagation" across approximately 12% of the starboard hull plating. The breaches in 4-Gamma and 17-Alpha were catastrophic — complete loss of those compartments. We have sealed both with emergency polyurethane foam (rated for 72-hour vacuum exposure at time of application; we have since reinforced with hand-applied composite patches).</p>
+
+    <p>The secondary breach at 9-Delta (the radiator array mounting point) was partial — a grapefruit-sized hole that we sealed within 45 minutes using a standard EVA patch kit. This area is now the weakest point in the hull. Hiroshi estimates that the patches will hold under normal cruise pressures, but any sustained acceleration above 0.3 g could cause delamination. We must keep thrust maneuvers gentle until permanent repairs are complete.</p>
+
+    <p><strong>Repair Plan (Priority: Critical):</strong> Hiroshi has identified two 2m × 3m sheets of 5mm aluminum-lithium alloy in the spare-parts storage (Section 19, port side). These were originally intended as replacement panels for the landing gear housing on Mars, but we have no landing gear anymore — we are not landing anywhere. He is cutting these down to patch panels and will weld them in place during EVA operations. Estimated time to complete: 10–14 days, weather and radiation permitting.</p>
+
+    <h2>3. Life Support Systems</h2>
+    <p><strong>Rating: 5/10 — Suboptimal, functioning</strong></p>
+
+    <h3>3.1 Atmosphere Management</h3>
+    <p>The primary Oxygen Generation System (OGS) is a solid-oxide electrolysis stack that splits CO₂ into breathable O₂ and carbon monoxide. The starboard OGS unit was destroyed in the impact. The port unit is operational at 74% nominal output. We are supplementing with oxygen candles (chlorate decomposition canisters) — we have 112 candles remaining, each providing 24 person-hours of O₂. At four people, that is 672 hours (28 days) of backup oxygen.</p>
+
+    <p>The CO₂ scrubbing system took the most serious hit: the starboard amine-swing adsorption bed is offline, its control electronics shredded. The port bed is functioning but operating at 110% of its design load to compensate. Hiroshi is working on a bypass circuit to cross-feed the port bed's output into both distribution loops, which should bring us back to nominal performance. If the port bed fails, we have a single spare unit in storage — installation time: 6 hours.</p>
+
+    <p>Current cabin atmosphere: 19.8% O₂, 0.03% CO₂, balance N₂. Total pressure: 101.3 kPa (nominal). Temperature: 20.5 °C (within acceptable range, though cycling due to the power brownout schedule). Safe.</p>
+
+    <h3>3.2 Water Recycling</h3>
+    <p>The Water Recovery and Management System (WRMS) operates at 88% efficiency. We lost the starboard holding tank (200 liters) to a micrometeorite puncture — that water is now a thin sheet of ice drifting somewhere behind us. The remaining system is a closed-loop multi-filtration unit: reverse osmosis, catalytic oxidation, and UV sterilization. Current potable water reserves: 1,480 liters (approx. 370 liters per person). At a consumption rate of 3.5 liters per person per day (drinking, food preparation, hygiene), that gives us roughly 105 days of water without recycling. With the WRMS active, we can stretch that to approximately 14 months — beyond our expected life-support window. The bottleneck is not water; it is the filters. We have three replacement filter sets. Each set lasts roughly 90 days. After 270 days, we are drinking recycled water without particulate filtration. Not ideal, but survivable.</p>
+
+    <h3>3.3 Thermal Control</h3>
+    <p>This is where we are most vulnerable. The <strong>secondary radiator array</strong> (Section 9-Delta) was damaged beyond repair. We have isolated it and drained its coolant loop to prevent a freeze-up cascade. The primary radiator array remains operational but was designed to share thermal load with the secondary. At peak heat generation — during a main engine burn or when running the OGS at full capacity — the primary array cannot reject enough heat. We have implemented a thermal budget: no high-power operations lasting longer than 30 minutes without a 90-minute cooldown period. This limits our burn durations and constrains our ability to accelerate continuously. For a Mars-return trajectory, this is a serious problem — we need sustained low-thrust burns over days, not minutes.</p>
+
+    <p><strong>Repair Plan (Priority: High):</strong> Hiroshi believes he can fabricate a supplementary radiator from spare heat-exchange plates originally intended for the Mars habitat module. The challenge is routing the coolant lines through the starboard hull — a job that requires at least two EVAs and carries significant risk. Work begins once hull patches are complete.</p>
+
+    <h2>4. Power Systems</h2>
+    <p><strong>Rating: 6/10 — Degraded, adequate</strong></p>
+    <p>The primary power source is a pair of 5-kW Radioisotope Thermoelectric Generators (RTGs) feeding a 120-volt DC bus with 12 kW·h of lithium-ion buffer storage. Pre-incident output: 10 kW continuous. Current output: 6.2 kW. The loss of 3.8 kW is attributable to: (a) the damaged radiator forcing a thermal derating of the RTGs (approximately 2.1 kW reduction), (b) one of the power-conversion modules in the starboard distribution panel being physically destroyed (1.0 kW), and (c) increased internal resistance in the buffer batteries from a brief overcurrent event during the impact (0.7 kW).</p>
+
+    <p>We are running a rolling brownout schedule: habitation compartments cycle between full power (lights, ventilation, data terminals) and minimal power (emergency lighting only, minimal circulation) every four hours. Bridge, infirmary, and engineering are always on. We have also turned off every non-essential load: the galley's food warmer, the entertainment system, half the interior lighting, and the secondary science equipment.</p>
+
+    <p>Total power budget: 6.2 kW available. Current consumption: 5.8 kW. That leaves 400 watts of margin. Not enough. But if Hiroshi can repair the power-conversion module (estimated +1.0 kW recovered) and we rebuild the thermal system (+1.5 kW recovered from RTG derating), we can return to approximately 8.2 kW of usable power — enough to run everything essential plus small margins for repairs and unexpected loads.</p>
+
+    <h2>5. Propulsion &amp; Attitude Control</h2>
+    <p><strong>Rating: 7/10 — Main drive intact, maneuvering compromised</strong></p>
+    <p>The <strong>main fusion drive</strong> — a D-He³ inertial electrostatic confinement thruster rated for 0.45 N/kW specific impulse — is undamaged. This is our single greatest piece of luck. The drive bell shows no signs of microfracture, the magnetic confinement coils are aligned within tolerance, and the fuel pellets (2.4 tonnes of helium-3) are in a shielded bunker in the lower deck, untouched by the debris strike. We can make one major interplanetary burn — maybe two, if we push the reactor to 110% and accept the thermal risk.</p>
+
+    <p>The <strong>attitude control system</strong> (ACS) is a different story. We have twelve hydrazine monopropellant thrusters arranged in four pods. The starboard aft pod (three thrusters) was shredded by debris. The starboard forward pod (two thrusters) shows degraded performance — likely a clogged injector from debris contamination in the propellant line. This gives us an asymmetric thrust profile: when we fire the port thrusters, we get a clean vector; when we fire the starboard thrusters, we get approximately 60% of expected thrust, and only from the remaining forward pod. This introduces a rotational bias that Raj will have to compensate for in all navigation calculations.</p>
+
+    <p>Hydrazine reserves: 180 kg remaining. At standard consumption rates, this provides approximately 45 minutes of continuous ACS firing. Not much, but enough for course corrections and attitude hold. The priority is to avoid wasting propellant on unnecessary maneuvers.</p>
+
+    <h2>6. Communications</h2>
+    <p><strong>Rating: 2/10 — Receive only; transmit severely degraded</strong></p>
+    <p>The main high-gain antenna (a 3.7-meter parabolic dish on the forward dorsal mount) was struck by debris and is now a collection of aluminum fragments. The secondary omnidirectional antenna remains intact. We can receive signals from Earth — telemetry, news broadcasts, the occasional personal message — but our transmission capability is limited to the emergency low-gain antenna, which has an output power of approximately 5 watts and is omnidirectional. At 142 million kilometers, that signal reaches Earth at roughly the same strength as a dying flashlight. Even with the Deep Space Network listening at maximum gain, our transmissions are barely above the noise floor.</p>
+
+    <p>We can send short text bursts — maybe 140 characters per transmission — to any listening station that happens to be pointing in our direction. We have sent three since the accident. We have received no acknowledgements. Either our messages are not reaching Earth, or the turnaround time is longer than we have been waiting. I choose to believe the latter.</p>
+
+    <p><strong>Repair Plan (Priority: Medium):</strong> The backup antenna dish is stored in the (destroyed) cargo bay. There is no spare. Hiroshi is exploring the possibility of fabricating a makeshift parabolic reflector from antenna foil and a structural frame. Estimated gain improvement: 10–15 dB. Enough to send intelligible voice transmissions? No. Enough to send data packets at 300 baud? Possibly.</p>
+
+    <h2>7. Navigation &amp; Computing</h2>
+    <p><strong>Rating: 8/10 — Largely intact</strong></p>
+    <p>The primary flight computer (a radiation-hardened dual-redundant system) survived the strike fully operational. The secondary backup unit was in Section 4-Gamma. It did not survive. We have one computer controlling the ship. If it fails, we lose active navigation, power management, and life-support automation. I have ordered daily backups of all critical data to a portable hand-terminal that Raj keeps on his person at all times.</p>
+
+    <p>The star tracker and inertial navigation unit are functional. Raj has already taken his first set of celestial sightings and confirms our position within 250 km — remarkably accurate for a ship that just went through a debris cloud. The main concern is navigation without real-time ground updates: our trajectory model will degrade by approximately 0.5% per week without correction from Earth-based radar. Over 240 days, that is a cumulative error of 171,000 km —enough to sail past Earth entirely, never to be seen again.</p>
+
+    <p>Raj is confident he can correct drift using periodic star-field triangulation and parallax measurements against known asteroid positions. He calls it "nineteenth-century navigation in a twenty-first-century ship." I call it essential.</p>
+
+    <h2>8. Medical &amp; Crew Support</h2>
+    <p><strong>Rating: 6/10 — Adequate for current needs, limited for emergencies</strong></p>
+    <p>Dr. Amara Singh reports that the infirmary (lower deck, Section 21-Beta) is intact and fully stocked. The medical bay in Section 4-Gamma — the one with the advanced surgical suite, the pharmacy, and the blood-analysis lab — is gone. What remains is the backup kit: a middeck trauma station with basic surgical tools, a portable ultrasound, a defibrillator, and a 90-day supply of common medications (antibiotics, painkillers, antiemetics, anticoagulants). For anything beyond basic trauma care — a major infection, a surgical emergency, an allergic reaction to a medication we do not have — we are improvising.</p>
+
+    <p>Amara has conducted a full health screening on all four crew members. Results: Raj's concussion is resolving well; he should be cleared for light duty in 5–7 days. Amara's lacerations are healing without signs of infection. Hiroshi and I are physically healthy, though Amara notes elevated cortisol levels in both of us — a polite way of saying we are under immense stress. She has prescribed mandatory rest periods of six hours per crew member per day. We are ignoring her, and she knows it, and she will keep prescribing.</p>
+
+    <p>Psychological support: I have established a daily debrief — a 30-minute meeting where every crew member speaks, uninterrupted, about how they are feeling. No rank, no hierarchy, just people. It is the most important thirty minutes of my day.</p>
+
+    <h2>9. Inventory Summary</h2>
+    <p>What we have, what we lack, and what we need to survive:</p>
+
+    <ul>
+      <li><strong>Food:</strong> 320 days full rations / 410 days with rationing / 500 days starvation — 4 person-crew</li>
+      <li><strong>Water:</strong> 1,480 liters potable + recycling (effective ~14 months)</li>
+      <li><strong>Oxygen:</strong> 405 days (OGS + candles) at current metabolic rates</li>
+      <li><strong>Power:</strong> 6.2 kW available / 5.8 kW consumed — 400 W margin</li>
+      <li><strong>Propellant:</strong> Main drive fuel intact (one major burn). ACS hydrazine: 180 kg (~45 mins)</li>
+      <li><strong>Structural:</strong> 3 breaches patched. 12% starboard hull microfractured. Stress limit: 0.3 g</li>
+      <li><strong>Crew:</strong> 4 able-bodied. 1 concussion (recovering). 0 critical injuries.</li>
+    </ul>
+
+    <h2>10. The Road Ahead</h2>
+    <p>This survey tells me one thing clearly: the <em>Odyssey</em> is not dead. She is wounded, crippled in some critical ways, but fundamentally salvageable. We have a functioning drive. We have life support that might — with careful management and a fair amount of luck — last long enough to get us home. We have a crew that is competent, determined, and not yet broken.</p>
+
+    <p>But the margins are razor thin. A single additional failure — a hull breach during acceleration, a scrubber breakdown, a power-system cascade — could tip us from "struggling but alive" to "dead in the water." Every system we repair reduces those margins. Every day we survive increases them.</p>
+
+    <p>Hiroshi has his work plan. Raj has his navigation strategy. Amara has her medical protocols. I have my command. We will repair what we can, ration what we must, and fly what remains of this ship toward Earth one system at a time.</p>
+
+    <p>This is Commander Elena Voss, ISV <em>Odyssey</em>, closing the technical survey. Next log: daily-life entries from the heart of the crisis — the small rituals, the quiet despair, and the unexpected moments of grace that keep four people alive at the edge of the solar system.</p>
+
+    <hr>
+
+    <div class="chapter-nav">
+      <a href="/blog/part-1/accident.html">&larr; The Accident</a>
+      <a href="/blog/part-2/daily-log.html">Continue to Part II: Daily Log &rarr;</a>
+    </div>
+
+    <p style="text-align:center;color:var(--text-muted);font-size:0.75rem;margin-top:3rem;">
+      The Last Signal — A Space Chronicle by Commander Elena Voss &middot;
+      Part I: The Ship That Remains
+    </p>
+  </main>
+</div>
+<script src="/src/sidebar.js"></script>
+<script src="/src/main.js"></script>
+</body>
+</html>

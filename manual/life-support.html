@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Last Signal — Manual: Section I — Life Support Basics</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+<div class="starfield" id="starfield"></div>
+<div class="app">
+  <nav class="sidebar" id="sidebar"></nav>
+  <main class="main">
+    <a href="/" class="back-link">← Back to Home</a>
+    <div class="manual-header">
+      <span class="icon">⚠</span>
+      <h1>Section I: Life Support Basics</h1>
+    </div>
+
+    <div class="manual-section">
+      <h2>1.1 Atmosphere Composition & Monitoring</h2>
+      <p>The ISV <em>Odyssey</em>'s Environmental Control and Life Support System (ECLSS) maintains a standard sea-level atmosphere of 78.1% nitrogen, 20.9% oxygen, with trace gases including argon (0.93%) and carbon dioxide (nominally below 0.04%). Our damaged hull has compromised section isolation, meaning we cannot simply seal off a compromised module — any leak affects the entire habitable volume.</p>
+      <p><strong>Critical thresholds:</strong> Partial pressure of oxygen (ppO₂) must remain between 15.2 kPa (minimum for consciousness without hypoxic impairment) and 49.5 kPa (maximum before oxygen toxicity becomes a concern). Our primary sensors report every 30 seconds. If you hear the oxygen alarm — a rising two-tone — you have no more than 45 seconds to don an emergency mask before cognitive impairment begins. Memorize that sound.</p>
+      <p><strong>Daily protocol:</strong> Check the ECLSS status panel in the forward galley at the start of every shift. Verify ppO₂, total pressure, CO₂ concentration, and humidity. Log all readings in the ship's journal. Any reading outside the green band requires immediate verbal notification to the entire crew.</p>
+    </div>
+
+    <div class="manual-section">
+      <h2>1.2 CO₂ Scrubbing</h2>
+      <p>Our primary CO₂ removal uses lithium hydroxide (LiOH) canisters in the air revitalization system. Each canister absorbs approximately 250 liters of CO₂ before saturation. At a crew of four producing roughly 1.6 kg of CO₂ per day combined, a single canister lasts about 22 hours at nominal metabolic rates. Elevated activity — EVA preparation, physical labor, stress-induced hyperventilation — increases CO₂ output by up to 40%. Plan accordingly.</p>
+      <p><strong>Saturation indicators:</strong> The canister bank shows a color gradient from white (active) to pale pink (exhausted). Replace pink canisters immediately. Used canisters should be stored in the sealed waste locker — they contain caustic lithium hydroxide dust that can cause chemical burns if handled without gloves.</p>
+      <p><strong>Emergency backup:</strong> We carry 18 spare canisters in the aft storage locker. At current consumption rates that gives us approximately 16 days of nominal scrubbing. After that, see Section VI (Improvisation) for field-expedient CO₂ scrubber designs using sodium hydroxide and activated carbon from the water filtration system.</p>
+      <div class="scenario">
+        <strong>Scenario — Rising CO₂:</strong> You wake with a headache, your vision blurs when you stand, and your breathing feels urgent but unsatisfying. CO₂ concentration is likely above 0.5%. Check the scrubber bank immediately. If all canisters are saturated, ventilate the crew compartment by cycling the airlock and break out emergency masks. Do not wait for the alarm — the CO₂ alarm triggers at 0.8%, at which point cognitive degradation is already measurable.
+      </div>
+    </div>
+
+    <div class="manual-section">
+      <h2>1.3 Thermal Control</h2>
+      <p>Without active heating and cooling, the <em>Odyssey</em>'s interior would swing from the sun-baked +120°C on the dayside hull to the deep-space −150°C on the nightside within hours. Our thermal control system uses two loops: a water loop for moderate heat exchange (cabin cooling, electronics waste heat) and an ammonia loop for the external radiator panels. The debris strike damaged three of our six primary radiator panels, reducing heat rejection capacity by approximately 40%.</p>
+      <p><strong>Cabin temperature target:</strong> 18–22°C. If the temperature rises above 28°C, we must reduce non-essential electrical load immediately — every watt of power eventually becomes heat. If it drops below 14°C, prioritize layering with thermal blankets before drawing additional heating power. The emergency heater in the aft crew quarter draws 400W and can raise a single compartment by 5°C per hour.</p>
+      <p><strong>Watch for condensation:</strong> A failing thermal system allows humidity to condense on cold surfaces. Water droplets near electronics are a fire and short-circuit hazard. If you see condensation on the interior hull panels, note the location and report it immediately.</p>
+    </div>
+
+    <div class="manual-section">
+      <h2>1.4 Water Recycling & Management</h2>
+      <p>The Urine Processing Assembly and Water Recovery System operate at approximately 85% efficiency under normal conditions — recovering 4.2 liters of potable water from every 5 liters of wastewater (urine, humidity condensate, hygiene water). Post-damage, efficiency has dropped to roughly 70%. We currently produce approximately 6 liters of reclaimed water per day against a crew demand of 11 liters (2.75 L/person/day for drinking and rehydration). The deficit is drawn from our emergency reserve tank: 180 liters of stored potable water.</p>
+      <p><strong>At current net draw:</strong> We lose roughly 5 liters per day from reserves. That gives us 36 days before depletion if we maintain nominal consumption. At 1.5 L/person/day (minimum survival ration), we extend to 60 days. Water discipline begins now, not when the tank runs dry.</p>
+      <p><strong>Contamination watch:</strong> If reclaimed water tastes metallic, smells sulfurous, or shows any discoloration, stop drinking it immediately and notify me. A breached membrane in the reverse osmosis unit can introduce urea compounds or bacterial contaminants. We have chemical test strips in the med kit — use them weekly.</p>
+    </div>
+
+    <div class="manual-section">
+      <h2>1.5 Emergency Reserves</h2>
+      <p>Our emergency reserves are segregated into three tiers and are not to be accessed without my direct authorization:</p>
+      <ul>
+        <li><strong>Tier 1 — Immediate (48h):</strong> Four emergency breathing masks with 2-hour O₂ cannisters, two 10-liter collapsible water bladders, and four MRE packets. Located in the forward locker next to the airlock. Breach only for depressurization events or fire.</li>
+        <li><strong>Tier 2 — Extended (14 days):</strong> Eight LiOH canisters, four 20-liter water containers, 56 MRE packets, and a hand-cranked UV water purifier. Located in the aft equipment bay. Requires two-person authorization (Commander and one crew member) to open.</li>
+        <li><strong>Tier 3 — Deep Survival (30+ days):</strong> Sealed environmental crate in the cargo hold. Contents: foldable solar still, chemical water treatment tablets (500), high-calorie survival bars (80), and a portable CO₂ scrubber assembly. This is our last resort. Once opened, declare a Tier 3 emergency in the ship's log.</li>
+      </ul>
+      <p><strong>Final note:</strong> The ECLSS is the single most critical system on this vessel. Power can be rationed. Food can be stretched. Navigation can be approximated. But if the air goes bad or the water runs out, we have exactly as long as our reserves last — and no longer. Treat every liter of water and every breath of recycled air as the precious resource it is. This is not group psychology. This is orbital mechanics. The equations are absolute.</p>
+    </div>
+
+  </main>
+</div>
+<script src="/src/main.js"></script>
+<script src="/src/sidebar.js"></script>
+</body>
+</html>

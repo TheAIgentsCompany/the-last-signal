@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Last Signal — Manual: Section V — Rationing & Supply Management</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+<div class="starfield" id="starfield"></div>
+<div class="app">
+  <nav class="sidebar" id="sidebar"></nav>
+  <main class="main">
+    <a href="/" class="back-link">← Back to Home</a>
+    <div class="manual-header">
+      <span class="icon">⚠</span>
+      <h1>Section V: Rationing & Supply Management</h1>
+    </div>
+
+    <div class="manual-section">
+      <h2>5.1 The Inventory Imperative</h2>
+      <p>In a functioning mission, logistics are handled by ground control — they track every gram of food, every milliliter of water, every kilowatt-hour of power across the entire mission timeline. On a disabled ship 142 million kilometers from Earth, we are our own logistics department. If we do not track our consumables with obsessive precision, we will die of a miscalculation that we had months to prevent.</p>
+      <p>The rule is simple: <strong>know exactly what you have, know exactly what you use, and know exactly how long it will last.</strong> Every crew member maintains their own consumption log. Once per week, we cross-reference all logs and update the master inventory. The master inventory is posted on the galley wall and read aloud at the weekly meeting. There are no surprises. </p>
+    </div>
+
+    <div class="manual-section">
+      <h2>5.2 Food Rationing Tiers</h2>
+      <p>Our food stores consist of 1,420 meal packets — a combination of freeze-dried entrees, thermostabilized pouches, and nutritional supplement bars. Each packet averages 1,200 kcal. At a standard intake of three packets per person per day (3,600 kcal), we have approximately 118 crew-days of food. For four people, that is 29 days. This is not enough.</p>
+      <p><strong>Tier 0 — Standard Ration (3,600 kcal/day):</strong> Three meals plus snacks. Used when full physical labor (EVA, repairs, heavy exercise) is required. This is the highest consumption tier and is unsustainable beyond short bursts. Targeted at EVA days and intensive repair operations only.</p>
+      <p><strong>Tier 1 — Reduced Ration (2,400 kcal/day):</strong> Two meals plus one supplement bar. Used for normal operations with moderate physical activity. At this tier, our food extends to 44 days. Crew members will experience mild hunger, particularly in the evening. This is acceptable. Chronic calorie deficit at this level can be maintained for 4–6 weeks without significant health deterioration.</p>
+      <p><strong>Tier 2 — Conservation Ration (1,800 kcal/day):</strong> One full meal plus two supplement bars. Used during passive survival phases — waiting, monitoring, minimal activity. At this tier, food extends to 59 days. Hunger will be constant. Energy levels will be low. Core body temperature may drop slightly. Minimize all non-essential movement. No EVA. No exercise beyond gentle stretching.</p>
+      <p><strong>Tier 3 — Emergency Ration (1,200 kcal/day):</strong> Three supplement bars plus multi-vitamins. This is the line between reduced intake and starvation. We can survive at this level for approximately 14 days before muscle wasting and immune system depression become medically significant. This tier is for the final stretch — the last two weeks before expected rescue or a desperate final maneuver. It is not sustainable.</p>
+      <p><strong>Transition protocol:</strong> Tier transitions are declared by me and logged with a timestamp. The declaration is irrevocable for a minimum of 7 days — we do not bounce between tiers based on daily mood. Once committed, we stay at that tier until the next scheduled re-assessment.</p>
+    </div>
+
+    <div class="manual-section">
+      <h2>5.3 Water Rationing</h2>
+      <p>Water is more critical than food. A human can survive weeks without food but only days without water. Our total potable water inventory — including reclaimed water, stored reserves, and emergency bladders — is approximately 280 liters as of the last full audit. At 2.75 L/person/day (standard), that is 25 days. At 1.5 L/person/day (conservation), that is 46 days.</p>
+      <p><strong>Water rationing rules:</strong></p>
+      <ul>
+        <li><strong>Drinking water is prioritized:</strong> No water is to be used for washing beyond a daily sponge bath using 0.2 liters. No water for shaving. No water for cleaning surfaces except with recycled condensate.</li>
+        <li><strong>Reclaimed water tracking:</strong> The water recovery system output must be measured and logged every 12 hours. If output drops below 2.5 liters per 12-hour cycle, troubleshoot immediately — the system may have a blockage or membrane breach.</li>
+        <li><strong>Personal hydration discipline:</strong> Urine color is your personal hydration indicator. Pale yellow = adequate. Dark yellow = drink water. Brown or orange = medical issue, report immediately. You should be urinating at least three times per day. Fewer than that means you are dehydrating.</li>
+        <li><strong>Alcohol and caffeine:</strong> Both are diuretics — they increase water loss. Our limited coffee supply is rationed to one cup per person every other day. The medical alcohol stores are for sterilization only, not consumption. This is not negotiable.</li>
+      </ul>
+    </div>
+
+    <div class="manual-section">
+      <h2>5.4 Power Rationing</h2>
+      <p>The solar arrays produce approximately 12 kW at peak output, but our damaged orientation system means we cannot always maintain optimal Sun angle. Average daily power generation is closer to 8 kW. Critical systems (ECLSS, navigation, essential lighting, comms receiver) draw 4.2 kW. That leaves 3.8 kW for everything else.</p>
+      <p><strong>Prioritization order:</strong></p>
+      <ol>
+        <li>Life support (ECLSS, CO₂ scrubbing, water recycling) — never interrupted.</li>
+        <li>Navigation and communication systems — maintained at standby power (30% of nominal) unless actively in use.</li>
+        <li>Medical equipment — available on demand.</li>
+        <li>Lighting and galley — dimming to 40% during non-active hours saves approximately 600W.</li>
+        <li>Computers and personal devices — non-essential systems shut down between 22:00 and 06:00.</li>
+        <li>Exercise equipment — draw limited to one device at a time.</li>
+      </ol>
+      <p><strong>Battery reserves:</strong> Our lithium-ion battery banks hold 120 kWh at full charge — approximately 15 hours of full-system operation without solar input. We cycle the batteries daily: charge during Sun exposure (14 hours of our 25-hour orbit), draw during the night-side passage. Do not let the state of charge drop below 15% except in a dire emergency. Deep discharges damage the cells and reduce total cycle life.</p>
+    </div>
+
+    <div class="manual-section">
+      <h2>5.5 Inventory Audit Procedures</h2>
+      <p>Every Sunday at 10:00, the entire crew participates in the weekly inventory audit. We rotate responsibility for each category so that every crew member knows the state of every consumable.</p>
+      <p><strong>Physical count vs. system log:</strong> Never trust the computer inventory alone. Open every locker. Count every item. The computer may have logged a consumption that never happened, or failed to log a consumption that did. Physical verification is the only truth.</p>
+      <p><strong>Dated rotation:</strong> Consumables are arranged by expiration date — closest expiration at the front. During each audit, check for package damage, swelling (indicating bacterial growth in pouches), or leaks. Damaged items are consumed first or disposed of in the waste compactor if unsafe.</p>
+      <p><strong>Master spreadsheet:</strong> All inventory data is maintained in a physical logbook (the navigation laptop is not reliable for long-term storage). The logbook contains: item name, quantity, unit size, total mass, location, expiration date, and a running consumption rate. This logbook is backed up every Sunday by photographing each page with the helmet camera and storing the images on two separate data chips.</p>
+    </div>
+
+    <div class="manual-section">
+      <h2>5.6 The Ethics of Scarcity</h2>
+      <p>This is the most difficult section in this manual. When supplies run low enough that not all crew members can be sustained, decisions must be made. They must be made openly, transparently, and in advance — not in a crisis.</p>
+      <p><strong>Guiding principles:</strong></p>
+      <ul>
+        <li><strong>Equal share by default:</strong> Every crew member receives an equal portion of every rationed consumable unless a medical necessity justifies a different distribution. I take the same ration as everyone else.</li>
+        <li><strong>Medical exemptions:</strong> If a crew member is injured, ill, or recovering from an EVA, their ration may be increased temporarily by medical order. This is documented and deducted from the general pool equally — everyone's future share decreases by the same amount.</li>
+        <li><strong>No secret caches:</strong> I have zero tolerance for personal hoarding. I have conducted a full search of every personal locker and crew quarter. There are no private food or water stores. If I find any, the person responsible will be confined to quarters on minimum ration for 48 hours per incident.</li>
+        <li><strong>If it comes to the worst:</strong> If supplies are insufficient for all four to survive until a known rescue window, we will put the decision to a vote. I will not make that decision alone. Every member of this crew has an equal voice and an equal vote. We will face that moment together or not at all.</li>
+      </ul>
+    </div>
+
+  </main>
+</div>
+<script src="/src/main.js"></script>
+<script src="/src/sidebar.js"></script>
+</body>
+</html>
