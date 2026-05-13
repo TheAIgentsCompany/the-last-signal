@@ -32,15 +32,15 @@ These are their logs. This is their manual for staying alive. This is **The Last
 
 ### ✦ The Story
 
-| Chapter | What happened |
+| Chapter | What Happened |
 |---------|---------------|
-| **⟡ The Arrow and the Void** | Launch from Kennedy. Seven crew members. A debris cloud no one saw coming. |
-| **⊙ The Accident** | Three impacts at 11.3 km/s. Three crew lost. The ship becomes a tomb. |
-| **◈ The Ship That Remains** | A system-by-system survey of what still works — and what doesn't. |
-| **☰ Daily Log** | 45 entries across 200 days. The garden grows. The signal appears. |
-| **◌ The Silence** | The psychological weight of the void, and a mystery at 4.2 gigahertz. |
-| **⌇ The Calculus of Rescue** | An impossible signal. An impossible choice. They burn for the unknown. |
-| **✦ Return** | Day 1060. What they found at the end of the signal changed everything. |
+| **⟡ Prologue — The Arrow and the Void** | Launch from Kennedy, a debris strike at 11.3 km/s, and three crew lost. The ISV *Odyssey* drifts 142M km from Earth. |
+| **⊙ Part I — The Accident** | The aftermath of the strike. Ship systems assessed, Jenna Okafor saved, life support calculations begin. |
+| **◈ Part I — The Ship That Remains** | A system-by-system survey of what still works — propulsion dead, comms gone, but power and air hold. |
+| **☰ Part II — Daily Log** | 45 entries across 200 days. The garden grows. A signal appears at 4.2 GHz. |
+| **◌ Part II — The Silence** | The psychological weight of the void. The crew deciphers the signal's structure — it's intelligent. |
+| **⌇ Part III — Signals** | The crew follows the beacon through a wormhole to a system 47 light-years from Earth in Cetus. First contact awaits. |
+| **✦ Epilogue — The Other Side of Silence** | Day 1060. The Kithra (crystalline aliens) welcome the crew. A choice: return to Earth or become humanity's bridge to the stars. |
 
 ### ⚠ The Space Survival Manual
 
@@ -48,30 +48,30 @@ A practical guide written by Commander Voss for her crew — 6 sections covering
 
 | Section | Topic |
 |---------|-------|
-| **◉ I** | Life Support Basics — atmosphere, CO₂, thermal control, water |
-| **◉ II** | Emergency EVA — suit systems, tether protocol, lost-in-space |
-| **◉ III** | Psychological Survival — isolation stress, conflict, daily structure |
+| **◉ I** | Life Support Basics — atmosphere, CO₂ scrubbing, thermal control, water recycling |
+| **◉ II** | Emergency EVA — suit systems, tether protocol, lost-in-space procedures |
+| **◉ III** | Psychological Survival — isolation stress, conflict resolution, daily structure |
 | **◉ IV** | Navigation Without Comms — celestial orientation, dead reckoning |
 | **◉ V** | Rationing & Supply Management — the ethics of scarcity |
-| **◉ VI** | Improvisation & Repair — CO₂ scrubbing, structural patches |
+| **◉ VI** | Improvisation & Repair — CO₂ scrubber repair, structural patches |
 
 ---
 
 <p align="center">
   <b>Built with</b><br>
-  <img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white"/>
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black"/>
+  <img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite"/>
+  <img src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white" alt="Vercel"/>
 </p>
 
 <p align="center">
-  <i>Created by <b><a href="https://github.com/ArtyETH06">ArtyETH06</a></b></i>
+  <b>Live URL</b><br>
+  <a href="https://story-the-ai-gents-company.vercel.app"><b>story-the-ai-gents-company.vercel.app</b></a>
 </p>
 
 <p align="center">
-  <sub><b>TheAIgentsCompany</b> — Multi-Agent Orchestration Platform</sub>
+  <i>Developed by <b>TheAIgentsCompany</b> · Powered by <b>Arty</b></i>
 </p>
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=4f8ff7&height=100&section=footer"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=4f8ff7&height=100&section=footer" width="100%"/>
 </p>

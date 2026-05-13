@@ -9,14 +9,25 @@
 <link rel="stylesheet" href="/src/style.css">
 </head>
 <body>
+<div class="reading-progress" id="readingProgress"></div>
 <div class="starfield" id="starfield"></div>
 <div class="app">
   <nav class="sidebar" id="sidebar"></nav>
   <main class="main">
     <a href="/" class="back-link">← Back to Home</a>
+
     <div class="manual-header">
       <span class="icon">⚠</span>
       <h1>Section I: Life Support Basics</h1>
+    </div>
+
+    <div class="manual-section-nav">
+      <a href="/manual/life-support.html" class="active">I · Life Support</a>
+      <a href="/manual/eva-emergency.html">II · EVA Emergency</a>
+      <a href="/manual/psychological.html">III · Psychological</a>
+      <a href="/manual/navigation.html">IV · Navigation</a>
+      <a href="/manual/rationing.html">V · Rationing</a>
+      <a href="/manual/improvisation.html">VI · Improvisation</a>
     </div>
 
     <div class="manual-section">
@@ -54,15 +65,27 @@
       <h2>1.5 Emergency Reserves</h2>
       <p>Our emergency reserves are segregated into three tiers and are not to be accessed without my direct authorization:</p>
       <ul>
-        <li><strong>Tier 1 — Immediate (48h):</strong> Four emergency breathing masks with 2-hour O₂ cannisters, two 10-liter collapsible water bladders, and four MRE packets. Located in the forward locker next to the airlock. Breach only for depressurization events or fire.</li>
+        <li><strong>Tier 1 — Immediate (48h):</strong> Four emergency breathing masks with 2-hour O₂ canisters, two 10-liter collapsible water bladders, and four MRE packets. Located in the forward locker next to the airlock. Breach only for depressurization events or fire.</li>
         <li><strong>Tier 2 — Extended (14 days):</strong> Eight LiOH canisters, four 20-liter water containers, 56 MRE packets, and a hand-cranked UV water purifier. Located in the aft equipment bay. Requires two-person authorization (Commander and one crew member) to open.</li>
         <li><strong>Tier 3 — Deep Survival (30+ days):</strong> Sealed environmental crate in the cargo hold. Contents: foldable solar still, chemical water treatment tablets (500), high-calorie survival bars (80), and a portable CO₂ scrubber assembly. This is our last resort. Once opened, declare a Tier 3 emergency in the ship's log.</li>
       </ul>
       <p><strong>Final note:</strong> The ECLSS is the single most critical system on this vessel. Power can be rationed. Food can be stretched. Navigation can be approximated. But if the air goes bad or the water runs out, we have exactly as long as our reserves last — and no longer. Treat every liter of water and every breath of recycled air as the precious resource it is. This is not group psychology. This is orbital mechanics. The equations are absolute.</p>
     </div>
 
+    <div class="chapter-nav-bottom">
+      <div class="nav-disabled">
+        <span class="nav-direction">Previous</span>
+        <span class="nav-title">← (Start of Manual)</span>
+      </div>
+      <div></div>
+      <a href="/manual/eva-emergency.html">
+        <span class="nav-direction">Next Section</span>
+        <span class="nav-title">II: Emergency EVA →</span>
+      </a>
+    </div>
   </main>
 </div>
+<button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
 <script src="/src/main.js"></script>
 <script src="/src/sidebar.js"></script>
 </body>

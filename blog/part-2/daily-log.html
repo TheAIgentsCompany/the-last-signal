@@ -9,152 +9,168 @@
 <link rel="stylesheet" href="/src/style.css">
 </head>
 <body>
+<div class="reading-progress" id="readingProgress"></div>
 <div class="starfield" id="starfield"></div>
 <div class="app">
   <nav class="sidebar" id="sidebar"></nav>
   <main class="main">
+    <div class="reading-content">
+      <div class="chapter-nav">
+        <a href="/blog/part-1/ship.html">&larr; The Ship That Remains</a>
+        <div class="chapter-nav-label">Part II — The Art of Staying Alive</div>
+        <a href="/blog/part-2/silence.html">The Silence &rarr;</a>
+      </div>
 
-    <div class="chapter-nav">
-      <a href="/blog/part-1/ship.html">&larr; The Ship That Remains</a>
-      <span style="color:var(--text-muted);font-size:0.75rem;">Part II — The Art of Staying Alive</span>
-      <a href="/blog/part-2/silence.html">The Silence &rarr;</a>
+      <div class="chapter-header">
+        <div class="chapter-number-badge">
+          <span class="badge-dot"></span>
+          Chapter 3 — Part II
+        </div>
+        <h1>Daily Log</h1>
+        <p class="subtitle">45 entries spanning Days 48–200. Routine, discovery, and slow unraveling aboard the ISV Odyssey.</p>
+      </div>
+
+      <div class="reading-meta">
+        <span class="reading-time">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
+          <span id="readingTime">Loading...</span>
+        </span>
+        <span>Voss, Chen, Okonkwo, Rivera</span>
+      </div>
+
+      <div class="meta-line">
+        <strong>Status:</strong> Compressed log digest &middot;
+        <strong>Entries:</strong> 45 of 347 &middot;
+        <strong>Crew:</strong> Voss, Chen, Okonkwo, Rivera &middot;
+        <strong>Range:</strong> Sol 48 – Sol 200
+      </div>
+
+      <div class="chapter-content">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="time">SOL 048 &middot; 2025-05-30 &middot; 21:34 UTC</div>
+            <p><strong>Chen</strong> has finished the first full inventory of the hydroponics bay. We have 42 trays of microgreens, 12 of cherry tomatoes (two with blight, which she culled), and about 80 liters of nutrient solution. The math says we can supplement 120 calories per person per day by Sol 90 when the first batch matures. She's already talking about expanding into the forward cargo locker. I told her to walk before she runs — but honestly, seeing her excited is the first thing that's felt normal in weeks.</p>
+            <p>Okonkwo patched the secondary CO₂ scrubber this morning. It had been cycling at 68% efficiency since the impact. He replaced three clogged filters and flushed the loop with a mix of spare parts and sheer stubbornness. The scrubber is back to 94%. That buys us another six weeks before we need to consider the lithium hydroxide cannisters in the EVA lockers.</p>
+            <p>I updated the duty roster. Rivera takes first watch. She's been quiet — quieter than usual — but she shows up. That's all I can ask.</p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="time">SOL 053 &middot; 21:04 UTC</div>
+            <p>We held a memorial tonight. Not for anyone specific — for everyone. For the six crew who didn't make it, for the families on Earth who don't know yet, for ourselves a little bit. Okonkwo read a passage from <em>Endurance</em> by Shackleton. Chen lit a candle from the medical supply (we have twelve). Rivera sat with her back against the bulkhead and stared at the flame for forty minutes without speaking.</p>
+            <p>When it was over, Chen went to check on her plants. Okonkwo went back to the comms bay to see if anything had changed on the spectrum analyzer. I wrote this log. Tomorrow we do it all again.</p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="time">SOL 061 &middot; 06:12 UTC</div>
+            <p>The routine is settling. I didn't think it would, but it is. Morning wake at 06:00, staggered to avoid crowding in the galley. Breakfast (nutritional paste + rehydrated egg powder). Systems check at 07:30. Work detail assignments at 08:00. Lunch at 12:00. Afternoon maintenance or experiments until 17:00. Dinner. Personal time. Lights out at 22:00.</p>
+            <p>We've printed a physical schedule and taped it to the galley wall. Something about seeing it in ink makes it feel real. Chen drew a small flower next to the hydroponics slot. Rivera crossed out "personal time" and wrote "silence" in her blocky engineer's handwriting. Okonkwo laughed. I pretended not to notice.</p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="time">SOL 074 &middot; 14:50 UTC</div>
+            <p>The garden is thriving. I don't know why that makes me emotional, but it does. Chen has ten trays of microgreens at various stages — radish, pea shoots, sunflower. The first harvest was three days ago; she put a tiny handful on each of our trays at dinner. They were the first fresh thing any of us had eaten in seventy-four days.</p>
+            <p>Okonkwo said they tasted like victory. Rivera said they tasted like dirt, but she ate them anyway. I said they tasted like hope. Chen blushed and said we were all sentimental idiots.</p>
+            <p>She's right. But also: we grew food. In a tin can 142 million kilometers from Earth. That matters.</p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="time">SOL 082 &middot; 23:15 UTC</div>
+            <p>Rivera found something on the deep-band spectrum analyzer tonight. A repeating pattern at 4.2 GHz, very faint, buried under the noise floor. She brought me the recording — it's structured. Pulses with variable spacing, like a carrier wave with encoded data. Not natural. Not any human protocol she recognizes.</p>
+            <p>We've run it against every known communications standard in the ship's library. Nothing matches. It's not from Earth. It's not from any probe or satellite we know of.</p>
+            <p>I told her to keep monitoring but not to tell the others yet. Not until we know what it is. She gave me a look that said she understood — and that she was afraid. I didn't ask which of us she was more afraid for.</p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="time">SOL 090 &middot; 08:00 UTC</div>
+            <p>I've been thinking about the signal for a week now. It's persistent. Rivera says it comes in cycles — roughly 90 minutes on, 30 minutes off. That's an orbit. Whatever it is, it's attached to something in a stable orbit not far from us.</p>
+            <p>Chen doesn't know yet. Okonkwo doesn't know yet. I'm not keeping it from them out of malice — I'm trying to understand what we're dealing with before I introduce another variable into an already delicate system. The psychological state of this crew is balanced on a knife's edge. A mystery signal from deep space could tip us into panic, or it could give us purpose. I need to know which before I speak.</p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="time">SOL 097 &middot; 19:42 UTC</div>
+            <p>I told the crew about the signal. Okonkwo was excited — he immediately started running theories. Chinese relay satellite? A derelict from the JAXA Europa mission? Something new? Chen was cautious but curious. Rivera was relieved I'd finally shared it.</p>
+            <p>We've decided to spend one hour each evening analyzing the signal. It gives us something to do. Something to look forward to. A collective puzzle instead of collective dread.</p>
+            <p>I don't think it's a rescue signal. I think it's something else. But I'll take the morale boost for now.</p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="time">SOL 112 &middot; 10:30 UTC</div>
+            <p>Okonkwo isolated a data stream from the carrier today. It's not voice. It's compressed numeric data — telemetry, maybe, or positional coordinates. We don't have the codec to decode it, but the structure is undeniably artificial. The pattern repeats every 90 minutes with exact precision. Clock drift is less than 2 microseconds per cycle. Whatever built this, its timing systems are better than ours.</p>
+            <p>Rivera asked if I thought it was dangerous. I told her the truth: I don't know. But we're 142 million kilometers from anything that could hurt us, and this signal has been broadcasting for at least as long as we've been listening. If it wanted to hurt us, it's had plenty of time.</p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="time">SOL 128 &middot; 04:15 UTC</div>
+            <p>Three months. Ninety days since the impact. Ninety days since we lost contact with Earth. Ninety days since half our crew died. I mark the anniversaries now because I don't want the days to blur together into one long, undifferentiated stretch of survival.</p>
+            <p>We held another small ceremony. Chen brought a handful of microgreen clippings. Okonkwo played a recording of ocean waves from the ship's sound library. Rivera stood at the window and watched the stars drift by. I gave a short speech about endurance, about the human capacity to persist even when persistence seems pointless.</p>
+            <p>The crew is holding together. But I see cracks. Rivera stays up too late monitoring the signal. Chen talks to her plants. Okonkwo has started running the same diagnostic routines three or four times, as if repeating them will produce a different result. And I wake up at 03:00 every morning and stare at the ceiling for two hours before I can go back to sleep.</p>
+            <p>We are not okay. But we are alive. And as long as we're alive, there's a chance.</p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="time">SOL 141 &middot; 17:08 UTC</div>
+            <p>The second harvest was larger than the first. Chen has dialed in the nutrient mix and the light cycle — she's operating at 90% efficiency now, which is remarkable by any standard. We're supplementing almost 200 calories per day per person from the garden. It's not enough to survive on, but it's enough to make a difference. More importantly, it's enough to remind us that we can still create something in this dead place.</p>
+            <p>Okonkwo has started sketching a design for a hydroponic expander module using spare parts from the damaged forward cargo bay. He wants to triple our growing capacity by Sol 200. Chen told him if he builds it, she'll fill it. I signed the authorization. We need projects. We need things to build and tend and care about.</p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="time">SOL 156 &middot; 22:30 UTC</div>
+            <p>Rivera decoded a fragment of the signal today. It's a packet header — 256 bytes that contain what looks like an origin timestamp and a sequence number. The timestamp format is unfamiliar, but the sequence numbers are clear: we're listening to packet #712,004 of an ongoing transmission. Whoever built this source has been broadcasting for a long time.</p>
+            <p>The packet also contains what appears to be a checksum — a way to verify data integrity. We don't know what data follows the header, but the existence of the checksum means the data matters to someone. Or something.</p>
+            <p>Okonkwo suggested we try to transmit a response. I said no. Not yet. We don't know what's on the other end, and we don't have the resources to defend ourselves if it's hostile. But I told him we could continue passive monitoring, and if we can decode the payload, we can make an informed decision.</p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="time">SOL 170 &middot; 12:45 UTC</div>
+            <p>Rivera came to me privately today. She's been analyzing the signal's origin using parallax from the ship's minor course adjustments. She triangulated the source: it's coming from a point approximately 400,000 kilometers ahead of us, near the inner edge of the main asteroid belt. That's not a natural object. That's not a derelict satellite. That's something placed deliberately, at a specific position, broadcasting a specific signal on a specific frequency.</p>
+            <p>I asked her what she thought it was. She said, "I think it's a beacon, Commander. And I think it's waiting for us."</p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="time">SOL 185 &middot; 09:20 UTC</div>
+            <p>I made a decision today. We're going to adjust our trajectory to bring us closer to the signal source. It's a small change — a 0.3-degree deflection that will consume about 2% of our remaining reaction mass. It won't affect our Earth-return window significantly, and it brings us within 100,000 kilometers of the beacon by Sol 220.</p>
+            <p>I told the crew at dinner. Chen looked terrified. Okonkwo looked thrilled. Rivera looked like she'd known I was going to make this call before I did.</p>
+            <p>"It's a leap of faith," I said.</p>
+            <p>"So was leaving Earth," Okonkwo replied.</p>
+            <p>We did the burn at 22:00. The Odyssey groaned and shuddered, and the stars outside the window shifted by a barely perceptible fraction of a degree. But we're on a new course now. Toward the signal. Toward whatever's waiting for us in the dark.</p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="time">SOL 200 &middot; 23:59 UTC</div>
+            <p>Day 200. Two hundred days since the launch. One hundred fifty-two days since the impact. The garden is producing nearly 400 calories per day total. The signal is growing stronger as we approach. Rivera has decoded fragments of what appears to be navigational data — a set of coordinates, a rendezvous point, a schedule.</p>
+            <p>I look at my crew and see four people who have been stretched to their absolute limit. Chen's hands tremble when she works now. Okonkwo has lost eight kilograms. Rivera hasn't slept more than four hours in a single stretch in weeks. And I feel every one of those 200 days in my bones.</p>
+            <p>But I also see four people who refuse to give up. Who built a garden in a dead ship. Who decoded a message from an unknown intelligence. Who looked at the void and decided to sail toward it instead of away from it.</p>
+            <p>The signal is coming through clearer now. The payload is almost within reach. In another twenty days, we'll know what it says. We'll know why it's here, who built it, and what it wants from us.</p>
+            <p>I'm terrified. But I'm also — for the first time since the impact — curious about what tomorrow will bring.</p>
+            <p><em>— Commander Elena Voss, ISV Odyssey, Sol 200, 23:59 UTC</em></p>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="chapter-nav-bottom">
+        <a href="/blog/part-1/ship.html">
+          <span class="nav-direction">Previous</span>
+          <span class="nav-title">&larr; The Ship That Remains</span>
+        </a>
+        <div>
+          <div class="chapter-progress">
+            Chapter 3 · 4 of 7
+            <div class="chapter-progress-bar">
+              <div class="progress-fill" style="width:57.1%"></div>
+            </div>
+          </div>
+        </div>
+        <a href="/blog/part-2/silence.html">
+          <span class="nav-direction">Next Chapter</span>
+          <span class="nav-title">The Silence &rarr;</span>
+        </a>
+      </div>
     </div>
-
-    <div class="chapter-label">Part II — The Art of Staying Alive</div>
-    <h1>Daily Log</h1>
-    <p class="subtitle">45 entries spanning Days 48–200. Routine, discovery, and slow unraveling aboard the ISV Odyssey.</p>
-
-    <div class="meta-line">
-      <strong>Status:</strong> Compressed log digest &middot;
-      <strong>Entries:</strong> 45 of 347 &middot;
-      <strong>Crew:</strong> Voss, Chen, Okonkwo, Rivera &middot;
-      <strong>Range:</strong> Sol 48 – Sol 200
-    </div>
-
-    <!-- Day 48 -->
-    <div class="timeline">
-      <div class="timeline-item">
-        <div class="time">SOL 048 &middot; 2025-05-30 &middot; 21:34 UTC</div>
-        <p><strong>Chen</strong> has finished the first full inventory of the hydroponics bay. We have 42 trays of microgreens, 12 of cherry tomatoes (two with blight, which she culled), and about 80 liters of nutrient solution. The math says we can supplement 120 calories per person per day by Sol 90 when the first batch matures. She's already talking about expanding into the forward cargo locker. I told her to walk before she runs — but honestly, seeing her excited is the first thing that's felt normal in weeks.</p>
-        <p>Okonkwo patched the secondary CO₂ scrubber this morning. It had been cycling at 68% efficiency since the impact. He replaced three clogged filters and flushed the loop with a mix of spare parts and sheer stubbornness. The scrubber is back to 94%. That buys us another six weeks before we need to consider the lithium hydroxide cannisters in the EVA lockers.</p>
-        <p>I updated the duty roster. Rivera takes first watch. She's been quiet — quieter than usual — but she shows up. That's all I can ask.</p>
-      </div>
-
-      <!-- Day 53 -->
-      <div class="timeline-item">
-        <div class="time">SOL 053 &middot; 21:04 UTC</div>
-        <p>We held a memorial tonight. Not for anyone specific — for everyone. For the six crew who didn't make it, for the families on Earth who don't know yet, for ourselves a little bit. Okonkwo read a passage from <em>Endurance</em> by Shackleton. Chen lit a candle from the medical supply (we have twelve). Rivera sat with her back against the bulkhead and stared at the flame for forty minutes without speaking.</p>
-        <p>When it was over, Chen went to check on her plants. Okonkwo went back to the comms bay to see if anything had changed on the spectrum analyzer. I wrote this log. Tomorrow we do it all again.</p>
-      </div>
-
-      <!-- Day 61 -->
-      <div class="timeline-item">
-        <div class="time">SOL 061 &middot; 06:12 UTC</div>
-        <p>The routine is settling. I didn't think it would, but it is. Morning wake at 06:00, staggered to avoid crowding in the galley. Breakfast (nutritional paste + rehydrated egg powder). Systems check at 07:30. Work detail assignments at 08:00. Lunch at 12:00. Afternoon maintenance or experiments until 17:00. Dinner. Personal time. Lights out at 22:00.</p>
-        <p>We've printed a physical schedule and taped it to the galley wall. Something about seeing it in ink makes it feel real. Chen drew a small flower next to the hydroponics slot. Rivera crossed out "personal time" and wrote "silence" in her blocky engineer's handwriting. Okonkwo laughed. I pretended not to notice.</p>
-      </div>
-
-      <!-- Day 74 -->
-      <div class="timeline-item">
-        <div class="time">SOL 074 &middot; 14:50 UTC</div>
-        <p>The garden is thriving. I don't know why that makes me emotional, but it does. Chen has ten trays of microgreens at various stages — radish, pea shoots, sunflower. The first harvest was three days ago; she put a tiny handful on each of our trays at dinner. They were the first fresh thing any of us had eaten in seventy-four days.</p>
-        <p>Okonkwo said they tasted like victory. Rivera said they tasted like dirt, but she ate them anyway. I said they tasted like hope. Chen blushed and said we were all sentimental idiots.</p>
-        <p>She's right. But also: we grew food. In a tin can 142 million kilometers from Earth. That matters.</p>
-      </div>
-
-      <!-- Day 82 -->
-      <div class="timeline-item">
-        <div class="time">SOL 082 &middot; 23:15 UTC</div>
-        <p>Rivera found something on the deep-band spectrum analyzer tonight. A repeating pattern at 4.2 GHz, very faint, buried under the noise floor. She brought me the recording — it's structured. Pulses with variable spacing, like a carrier wave with encoded data. Not natural. Not any human protocol she recognizes.</p>
-        <p>We've run it against every known communications standard in the ship's library. Nothing matches. It's not from Earth. It's not from any probe or satellite we know of.</p>
-        <p>I told her to keep monitoring but not to tell the others yet. Not until we know what it is. She gave me a look that said she understood — and that she was afraid. I didn't ask which of us she was more afraid for.</p>
-      </div>
-
-      <!-- Day 90 -->
-      <div class="timeline-item">
-        <div class="time">SOL 090 &middot; 08:00 UTC</div>
-        <p>I've been thinking about the signal for a week now. It's persistent. Rivera says it comes in cycles — roughly 90 minutes on, 30 minutes off. That's an orbit. Whatever it is, it's attached to something in a stable orbit not far from us.</p>
-        <p>Chen doesn't know yet. Okonkwo doesn't know yet. I'm not keeping it from them out of malice — I'm trying to understand what we're dealing with before I introduce another variable into an already delicate system. The psychological state of this crew is balanced on a knife's edge. A mystery signal from deep space could tip us into panic, or it could give us purpose. I need to know which before I speak.</p>
-      </div>
-
-      <!-- Day 97 -->
-      <div class="timeline-item">
-        <div class="time">SOL 097 &middot; 19:42 UTC</div>
-        <p>I told the crew about the signal. Okonkwo was excited — he immediately started running theories. Chinese relay satellite? A derelict from the JAXA Europa mission? Something new? Chen was cautious but curious. Rivera was relieved I'd finally shared it.</p>
-        <p>We've decided to spend one hour each evening analyzing the signal. It gives us something to do. Something to look forward to. A collective puzzle instead of collective dread.</p>
-        <p>I don't think it's a rescue signal. I think it's something else. But I'll take the morale boost for now.</p>
-      </div>
-
-      <!-- Day 112 -->
-      <div class="timeline-item">
-        <div class="time">SOL 112 &middot; 10:30 UTC</div>
-        <p>Okonkwo isolated a data stream from the carrier today. It's not voice. It's compressed numeric data — telemetry, maybe, or positional coordinates. We don't have the codec to decode it, but the structure is undeniably artificial. The pattern repeats every 90 minutes with exact precision. Clock drift is less than 2 microseconds per cycle. Whatever built this, its timing systems are better than ours.</p>
-        <p>Rivera asked if I thought it was dangerous. I told her the truth: I don't know. But we're 142 million kilometers from anything that could hurt us, and this signal has been broadcasting for at least as long as we've been listening. If it wanted to hurt us, it's had plenty of time.</p>
-      </div>
-
-      <!-- Day 128 -->
-      <div class="timeline-item">
-        <div class="time">SOL 128 &middot; 04:15 UTC</div>
-        <p>Three months. Ninety days since the impact. Ninety days since we lost contact with Earth. Ninety days since half our crew died. I mark the anniversaries now because I don't want the days to blur together into one long, undifferentiated stretch of survival.</p>
-        <p>We held another small ceremony. Chen brought a handful of microgreen clippings. Okonkwo played a recording of ocean waves from the ship's sound library. Rivera stood at the window and watched the stars drift by. I gave a short speech about endurance, about the human capacity to persist even when persistence seems pointless.</p>
-        <p>The crew is holding together. But I see cracks. Rivera stays up too late monitoring the signal. Chen talks to her plants. Okonkwo has started running the same diagnostic routines three or four times, as if repeating them will produce a different result. And I wake up at 03:00 every morning and stare at the ceiling for two hours before I can go back to sleep.</p>
-        <p>We are not okay. But we are alive. And as long as we're alive, there's a chance.</p>
-      </div>
-
-      <!-- Day 141 -->
-      <div class="timeline-item">
-        <div class="time">SOL 141 &middot; 17:08 UTC</div>
-        <p>The second harvest was larger than the first. Chen has dialed in the nutrient mix and the light cycle — she's operating at 90% efficiency now, which is remarkable by any standard. We're supplementing almost 200 calories per day per person from the garden. It's not enough to survive on, but it's enough to make a difference. More importantly, it's enough to remind us that we can still create something in this dead place.</p>
-        <p>Okonkwo has started sketching a design for a hydroponic expander module using spare parts from the damaged forward cargo bay. He wants to triple our growing capacity by Sol 200. Chen told him if he builds it, she'll fill it. I signed the authorization. We need projects. We need things to build and tend and care about.</p>
-      </div>
-
-      <!-- Day 156 -->
-      <div class="timeline-item">
-        <div class="time">SOL 156 &middot; 22:30 UTC</div>
-        <p>Rivera decoded a fragment of the signal today. It's a packet header — 256 bytes that contain what looks like an origin timestamp and a sequence number. The timestamp format is unfamiliar, but the sequence numbers are clear: we're listening to packet #712,004 of an ongoing transmission. Whoever built this source has been broadcasting for a long time.</p>
-        <p>The packet also contains what appears to be a checksum — a way to verify data integrity. We don't know what data follows the header, but the existence of the checksum means the data matters to someone. Or something.</p>
-        <p>Okonkwo suggested we try to transmit a response. I said no. Not yet. We don't know what's on the other end, and we don't have the resources to defend ourselves if it's hostile. But I told him we could continue passive monitoring, and if we can decode the payload, we can make an informed decision.</p>
-      </div>
-
-      <!-- Day 170 -->
-      <div class="timeline-item">
-        <div class="time">SOL 170 &middot; 12:45 UTC</div>
-        <p>Rivera came to me privately today. She's been analyzing the signal's origin using parallax from the ship's minor course adjustments. She triangulated the source: it's coming from a point approximately 400,000 kilometers ahead of us, near the inner edge of the main asteroid belt. That's not a natural object. That's not a derelict satellite. That's something placed deliberately, at a specific position, broadcasting a specific signal on a specific frequency.</p>
-        <p>I asked her what she thought it was. She said, "I think it's a beacon, Commander. And I think it's waiting for us."</p>
-      </div>
-
-      <!-- Day 185 -->
-      <div class="timeline-item">
-        <div class="time">SOL 185 &middot; 09:20 UTC</div>
-        <p>I made a decision today. We're going to adjust our trajectory to bring us closer to the signal source. It's a small change — a 0.3-degree deflection that will consume about 2% of our remaining reaction mass. It won't affect our Earth-return window significantly, and it brings us within 100,000 kilometers of the beacon by Sol 220.</p>
-        <p>I told the crew at dinner. Chen looked terrified. Okonkwo looked thrilled. Rivera looked like she'd known I was going to make this call before I did.</p>
-        <p>"It's a leap of faith," I said.</p>
-        <p>"So was leaving Earth," Okonkwo replied.</p>
-        <p>We did the burn at 22:00. The Odyssey groaned and shuddered, and the stars outside the window shifted by a barely perceptible fraction of a degree. But we're on a new course now. Toward the signal. Toward whatever's waiting for us in the dark.</p>
-      </div>
-
-      <!-- Day 200 -->
-      <div class="timeline-item">
-        <div class="time">SOL 200 &middot; 23:59 UTC</div>
-        <p>Day 200. Two hundred days since the launch. One hundred fifty-two days since the impact. The garden is producing nearly 400 calories per day total. The signal is growing stronger as we approach. Rivera has decoded fragments of what appears to be navigational data — a set of coordinates, a rendezvous point, a schedule.</p>
-        <p>I look at my crew and see four people who have been stretched to their absolute limit. Chen's hands tremble when she works now. Okonkwo has lost eight kilograms. Rivera hasn't slept more than four hours in a single stretch in weeks. And I feel every one of those 200 days in my bones.</p>
-        <p>But I also see four people who refuse to give up. Who built a garden in a dead ship. Who decoded a message from an unknown intelligence. Who looked at the void and decided to sail toward it instead of away from it.</p>
-        <p>The signal is coming through clearer now. The payload is almost within reach. In another twenty days, we'll know what it says. We'll know why it's here, who built it, and what it wants from us.</p>
-        <p>I'm terrified. But I'm also — for the first time since the impact — curious about what tomorrow will bring.</p>
-        <p><em>— Commander Elena Voss, ISV Odyssey, Sol 200, 23:59 UTC</em></p>
-      </div>
-    </div>
-
-    <hr>
-
-    <div class="chapter-nav">
-      <a href="/blog/part-1/ship.html">&larr; The Ship That Remains</a>
-      <span style="color:var(--text-muted);font-size:0.75rem;">Continue to The Silence</span>
-      <a href="/blog/part-2/silence.html">The Silence &rarr;</a>
-    </div>
-
   </main>
 </div>
+<button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
 <script src="/src/sidebar.js"></script>
 <script src="/src/main.js"></script>
 </body>

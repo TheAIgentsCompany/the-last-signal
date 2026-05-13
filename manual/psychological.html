@@ -9,14 +9,25 @@
 <link rel="stylesheet" href="/src/style.css">
 </head>
 <body>
+<div class="reading-progress" id="readingProgress"></div>
 <div class="starfield" id="starfield"></div>
 <div class="app">
   <nav class="sidebar" id="sidebar"></nav>
   <main class="main">
     <a href="/" class="back-link">← Back to Home</a>
+
     <div class="manual-header">
       <span class="icon">⚠</span>
       <h1>Section III: Psychological Survival</h1>
+    </div>
+
+    <div class="manual-section-nav">
+      <a href="/manual/life-support.html">I · Life Support</a>
+      <a href="/manual/eva-emergency.html">II · EVA Emergency</a>
+      <a href="/manual/psychological.html" class="active">III · Psychological</a>
+      <a href="/manual/navigation.html">IV · Navigation</a>
+      <a href="/manual/rationing.html">V · Rationing</a>
+      <a href="/manual/improvisation.html">VI · Improvisation</a>
     </div>
 
     <div class="manual-section">
@@ -78,11 +89,23 @@
         <li><strong>Verbal changes:</strong> Speaking significantly less, or speaking in a monotone, or making self-deprecating statements that feel different from normal humor.</li>
         <li><strong>Obsessive focus:</strong> Staring at the same display for hours, re-reading the same page, fixing something that is not broken.</li>
       </ul>
-      <p>If you observe any of these signs in yourself or another crew member, do not minimize it. Report it. We have a responsibility to each other. In this void, we are the only help any of us will ever have. </p>
+      <p>If you observe any of these signs in yourself or another crew member, do not minimize it. Report it. We have a responsibility to each other. In this void, we are the only help any of us will ever have.</p>
     </div>
 
+    <div class="chapter-nav-bottom">
+      <a href="/manual/eva-emergency.html">
+        <span class="nav-direction">Previous Section</span>
+        <span class="nav-title">← II: EVA Emergency</span>
+      </a>
+      <div></div>
+      <a href="/manual/navigation.html">
+        <span class="nav-direction">Next Section</span>
+        <span class="nav-title">IV: Navigation Without Comms →</span>
+      </a>
+    </div>
   </main>
 </div>
+<button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
 <script src="/src/main.js"></script>
 <script src="/src/sidebar.js"></script>
 </body>

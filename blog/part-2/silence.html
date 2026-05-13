@@ -9,90 +9,139 @@
 <link rel="stylesheet" href="/src/style.css">
 </head>
 <body>
+<div class="reading-progress" id="readingProgress"></div>
 <div class="starfield" id="starfield"></div>
 <div class="app">
   <nav class="sidebar" id="sidebar"></nav>
   <main class="main">
+    <div class="reading-content">
+      <div class="chapter-nav">
+        <a href="/blog/part-2/daily-log.html">&larr; Daily Log</a>
+        <div class="chapter-nav-label">Part II — The Art of Staying Alive</div>
+        <a href="/blog/part-3/signals.html">The Calculus of Rescue &rarr;</a>
+      </div>
 
-    <div class="chapter-nav">
-      <a href="/blog/part-2/daily-log.html">&larr; Daily Log</a>
-      <span style="color:var(--text-muted);font-size:0.75rem;">Part II — The Art of Staying Alive</span>
-      <a href="/blog/part-3/signals.html">The Calculus of Rescue &rarr;</a>
+      <div class="chapter-header">
+        <div class="chapter-number-badge">
+          <span class="badge-dot"></span>
+          Chapter 4 — Part II
+        </div>
+        <h1>The Silence</h1>
+        <p class="subtitle">The psychological weight of isolation, four minds coping with the void, and the mystery signal that changed everything.</p>
+      </div>
+
+      <div class="reading-meta">
+        <span class="reading-time">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
+          <span id="readingTime">Loading...</span>
+        </span>
+        <span>Commander Elena Voss</span>
+      </div>
+
+      <div class="meta-line">
+        <strong>Author:</strong> Commander Elena Voss &middot;
+        <strong>Crew:</strong> Dr. Amara Chen (Botanist), Cmdr. David Okonkwo (Engineer), Lt. Sofia Rivera (Comms) &middot;
+        <strong>Days:</strong> Sol 74 – Sol 212
+      </div>
+
+      <div class="chapter-content">
+        <p>There is a particular quality of silence that exists only in deep space. It is not the absence of sound — the ship hums and breathes and clicks around you constantly, a mechanical heartbeat that never stops. It is the absence of <em>presence</em>. The knowledge that if you open your mouth and speak, no one outside this hull will hear you. That if something breaks, no one is coming. That the vast, indifferent dark between the stars does not care whether you live or die, exist or vanish, hope or despair.</p>
+
+        <p class="reveal">That silence is the most dangerous thing on this ship. More dangerous than the damaged hull. More dangerous than the dwindling supplies. More dangerous than the radiation that seeps through our shielding a little more each day. Because the silence lives <em>inside</em> us now. It has made a home in the spaces between our thoughts. And it does not intend to leave.</p>
+
+        <h2 class="reveal">Four People, Four Silences</h2>
+
+        <p class="reveal">Every member of this crew copes differently. I have watched them carefully, as a commander must, because the fate of this mission depends not on the integrity of our hull but on the integrity of our minds. If one of us breaks, we all break. There is no margin for a casualty of the psyche.</p>
+
+        <h3 class="reveal">Dr. Amara Chen — The Botanist</h3>
+        <p class="reveal">Amara copes by creating. She spends twelve hours a day in the hydroponics bay, tending her plants with a devotion that borders on religious. She talks to the microgreens as if they were children — encouraging them, admonishing them, praising their growth. I have heard her apologize to a tray of basil for not adjusting the pH fast enough.</p>
+
+        <p class="reveal">At first I worried this was a sign of deterioration. Now I understand it is her survival mechanism. The garden is the only thing on this ship that grows, changes, responds to care. It is a living feedback loop in a dead environment. Amara needs to see that her actions have consequences — that she can reach out and touch something and make it better — because the alternative is accepting that nothing she does matters.</p>
+
+        <p class="reveal">She has started naming the plants. The oldest tomato vine is called "Persephone." She says it's because the plant goes down into the dark and comes back up every season. I did not correct her mythology. I think she knows. I think she named it that on purpose.</p>
+
+        <h3 class="reveal">Commander David Okonkwo — The Engineer</h3>
+        <p class="reveal">David copes by fixing. He has torn apart and rebuilt every non-critical system on the Odyssey at least twice. The water recycler has been fully disassembled and reassembled three times. The air circulation system has been optimized to within 1.2% of its theoretical maximum efficiency. He recently spent six hours recalibrating the toilet.</p>
+
+        <p class="reveal">I recognize this behavior because I share it. When the world is falling apart around you, the instinct is to find something — anything — that you can control. A filter you can replace. A valve you can tighten. A bolt you can torque to exactly the right specification. These small victories become monuments to your agency in a situation where you have almost none.</p>
+
+        <p class="reveal">But I worry about David. He has started running the same diagnostics multiple times, as if he expects different results. He checks the hull integrity readings every three hours even though the system is stable. He recalibrates the same sensor array every morning. The repetition has become compulsive — a ritual to ward off the silence.</p>
+
+        <p class="reveal">Last week I found him in the comms bay at 03:00, staring at a blank screen. He told me he was listening. I asked what he was listening <em>to</em>. He said, "The quiet. I'm trying to get used to it."</p>
+
+        <h3 class="reveal">Lieutenant Sofia Rivera — The Communications Officer</h3>
+        <p class="reveal">Sofia copes by searching. She is our most valuable asset and our most fragile psyche. Before the impact, she was responsible for maintaining contact with Earth — a job that required constant attention, constant connection, constant proof that we were not alone. Now that connection is severed. Earth is a dead channel. And Sofia has been adrift in a different kind of silence than the rest of us.</p>
+
+        <p class="reveal">She does not speak unless spoken to. She eats alone when she can. She volunteers for the longest watches because they give her an excuse to be by herself. I have caught her replaying old recordings of ground control transmissions — the voices of people she will never see again, speaking words that were already obsolete by the time they reached us.</p>
+
+        <p class="reveal">The mystery signal has been a lifeline for her. It gives her a reason to listen. A reason to hope that there is something out there besides the void. She spends every waking hour analyzing its patterns, running spectrograms, trying to pry meaning from its encrypted payload. It is the only thing that makes her look alive.</p>
+
+        <p class="reveal">I am afraid of what will happen if the signal turns out to be nothing. I am equally afraid of what will happen if it turns out to be something.</p>
+
+        <h3 class="reveal">Commander Elena Voss — The Author</h3>
+        <p class="reveal">I cope by writing. These logs, this manual, these records — they are my way of imposing order on chaos. If I can describe what happened today, I can make it real. If I can analyze our situation in words, I can understand it. If I can leave a record of our existence, then even if we do not survive, someone will know that we were here.</p>
+
+        <p class="reveal">It is a fragile comfort. There are nights when I sit with my hands on the keyboard and nothing comes. The words are there — I can feel them pressing against the inside of my skull — but they refuse to arrange themselves into sentences. Those are the nights when the silence is loudest. When I close my eyes and feel the ship around me like a coffin and wonder if I am writing a log or an epitaph.</p>
+
+        <p class="reveal">But I keep writing. Because stopping would mean giving up. And I am not ready to give up yet.</p>
+
+        <h2 class="reveal">The Cost of Silence</h2>
+        <p class="reveal">We are paying a price for this isolation that I did not fully anticipate. It is not the dramatic, cinematic breakdowns you see in films. It is slower than that. More insidious. It manifests as small things: a conversation that trails off into nothing; a meal eaten in silence because no one has the energy to speak; a joke that lands flat because humor requires a shared context, and our context has become too narrow and too painful to joke about.</p>
+
+        <p class="reveal">Chen cried over a wilted leaf yesterday. Not a whole plant — one leaf. She stood in the hydroponics bay with that limp piece of vegetation in her hand and wept like she had lost a child. I held her while she cried and told her it was okay, that we could grow another, that the garden was still healthy. She nodded and wiped her eyes and went back to work. Neither of us mentioned it again.</p>
+
+        <p class="reveal">Okonkwo has stopped sleeping in his bunk. He sleeps in the engineering bay now, curled up on a spare mattress next to the main reactor housing. He says it's because the hum of the reactor helps him relax. I think it's because his cabin is too quiet. Too much like the silence he's trying to escape.</p>
+
+        <p class="reveal">Rivera has started muttering. It's not words — it's fragmented syllables, half-formed phrases, the linguistic equivalent of static. She doesn't realize she's doing it. I asked Chen if she'd noticed. She said yes. We agreed not to mention it.</p>
+
+        <h2 class="reveal">The Signal Changes Everything</h2>
+        <p class="reveal">And then there is the signal. Twenty-three days ago, Rivera detected a repeating pattern at 4.2 GHz that did not match any known communications protocol. Since then, we have devoted ourselves to understanding it. The signal has become our collective project — the thing that gives us a reason to gather in the comms bay each evening, to share our findings, to feel like a crew again instead of four strangers trapped in a metal box.</p>
+
+        <p class="reveal">The signal is artificial. We have confirmed that. It carries structured data — compressed, encoded, but clearly designed by intelligence. The timing is precise to within microseconds. The origin point is fixed in space, approximately 400,000 kilometers ahead of our current trajectory. It is a beacon. A lighthouse in the dark.</p>
+
+        <p class="reveal">We have begun to decode fragments of the payload. The first frame contained what appears to be a greeting — a sequence of prime numbers that any mathematically literate civilization would recognize as intentional. It is the galactic equivalent of saying "hello."</p>
+
+        <p class="reveal">I will not pretend to understand the implications. If this signal is from an extraterrestrial intelligence, we are witnessing first contact. If it is from a human source we don't know about, there is a presence in the solar system that has been operating in secrecy. Either way, nothing will be the same after we decode this message.</p>
+
+        <p class="reveal">I have authorized a course correction to bring us closer to the source. This was not a decision I made lightly. It consumes reaction mass we may need for emergency maneuvers. It commits us to a trajectory that may take us further from any possible rescue. But I made it anyway, because the signal is the only thing that has cut through the silence. The only thing that has reminded us that we are not alone.</p>
+
+        <h2 class="reveal">The Silence That Remains</h2>
+        <p class="reveal">But even the signal cannot fill the silence entirely. It is a distraction, not a cure. When the comms screens go dark and we retreat to our cabins, the quiet returns. It settles over each of us like a blanket — heavy, suffocating, persistent.</p>
+
+        <p class="reveal">I lie awake at night and listen to the ship. The creak of thermal expansion. The whisper of air circulators. The distant thrum of the reactor. These are the sounds of survival. But underneath them, if I listen closely enough, I can hear something else. The sound of four hearts beating in the void. The sound of four minds trying not to break. The sound of silence, pressing in from all sides, waiting for us to fall.</p>
+
+        <p class="reveal">We will not fall. Not tonight. Not tomorrow. Not while there is still a signal to decode, a garden to tend, a ship to repair, a log to write. We will hold the line against the silence for as long as it takes.</p>
+
+        <blockquote class="reveal">
+          "The silence of deep space is not empty. It is full of everything we have lost and everything we still hope to find. We just have to learn to listen."
+          <strong>— Commander Elena Voss, ISV Odyssey, Sol 212</strong>
+        </blockquote>
+      </div>
+
+      <hr>
+
+      <div class="chapter-nav-bottom">
+        <a href="/blog/part-2/daily-log.html">
+          <span class="nav-direction">Previous</span>
+          <span class="nav-title">&larr; Daily Log</span>
+        </a>
+        <div>
+          <div class="chapter-progress">
+            Chapter 4 · 5 of 7
+            <div class="chapter-progress-bar">
+              <div class="progress-fill" style="width:71.4%"></div>
+            </div>
+          </div>
+        </div>
+        <a href="/blog/part-3/signals.html">
+          <span class="nav-direction">Next Chapter</span>
+          <span class="nav-title">The Calculus of Rescue &rarr;</span>
+        </a>
+      </div>
     </div>
-
-    <div class="chapter-label">Part II — The Art of Staying Alive</div>
-    <h1>The Silence</h1>
-    <p class="subtitle">The psychological weight of isolation, four minds coping with the void, and the mystery signal that changed everything.</p>
-
-    <div class="meta-line">
-      <strong>Author:</strong> Commander Elena Voss &middot;
-      <strong>Crew:</strong> Dr. Amara Chen (Botanist), Cmdr. David Okonkwo (Engineer), Lt. Sofia Rivera (Comms) &middot;
-      <strong>Days:</strong> Sol 74 – Sol 212
-    </div>
-
-    <p>There is a particular quality of silence that exists only in deep space. It is not the absence of sound — the ship hums and breathes and clicks around you constantly, a mechanical heartbeat that never stops. It is the absence of <em>presence</em>. The knowledge that if you open your mouth and speak, no one outside this hull will hear you. That if something breaks, no one is coming. That the vast, indifferent dark between the stars does not care whether you live or die, exist or vanish, hope or despair.</p>
-
-    <p>That silence is the most dangerous thing on this ship. More dangerous than the damaged hull. More dangerous than the dwindling supplies. More dangerous than the radiation that seeps through our shielding a little more each day. Because the silence lives <em>inside</em> us now. It has made a home in the spaces between our thoughts. And it does not intend to leave.</p>
-
-    <h2>Four People, Four Silences</h2>
-
-    <p>Every member of this crew copes differently. I have watched them carefully, as a commander must, because the fate of this mission depends not on the integrity of our hull but on the integrity of our minds. If one of us breaks, we all break. There is no margin for a casualty of the psyche.</p>
-
-    <h3>Dr. Amara Chen — The Botanist</h3>
-    <p>Amara copes by creating. She spends twelve hours a day in the hydroponics bay, tending her plants with a devotion that borders on religious. She talks to the microgreens as if they were children — encouraging them, admonishing them, praising their growth. I have heard her apologize to a tray of basil for not adjusting the pH fast enough.</p>
-    <p>At first I worried this was a sign of deterioration. Now I understand it is her survival mechanism. The garden is the only thing on this ship that grows, changes, responds to care. It is a living feedback loop in a dead environment. Amara needs to see that her actions have consequences — that she can reach out and touch something and make it better — because the alternative is accepting that nothing she does matters.</p>
-    <p>She has started naming the plants. The oldest tomato vine is called "Persephone." She says it's because the plant goes down into the dark and comes back up every season. I did not correct her mythology. I think she knows. I think she named it that on purpose.</p>
-
-    <h3>Commander David Okonkwo — The Engineer</h3>
-    <p>David copes by fixing. He has torn apart and rebuilt every non-critical system on the Odyssey at least twice. The water recycler has been fully disassembled and reassembled three times. The air circulation system has been optimized to within 1.2% of its theoretical maximum efficiency. He recently spent six hours recalibrating the toilet.</p>
-    <p>I recognize this behavior because I share it. When the world is falling apart around you, the instinct is to find something — anything — that you can control. A filter you can replace. A valve you can tighten. A bolt you can torque to exactly the right specification. These small victories become monuments to your agency in a situation where you have almost none.</p>
-    <p>But I worry about David. He has started running the same diagnostics multiple times, as if he expects different results. He checks the hull integrity readings every three hours even though the system is stable. He recalibrates the same sensor array every morning. The repetition has become compulsive — a ritual to ward off the silence.</p>
-    <p>Last week I found him in the comms bay at 03:00, staring at a blank screen. He told me he was listening. I asked what he was listening <em>to</em>. He said, "The quiet. I'm trying to get used to it."</p>
-
-    <h3>Lieutenant Sofia Rivera — The Communications Officer</h3>
-    <p>Sofia copes by searching. She is our most valuable asset and our most fragile psyche. Before the impact, she was responsible for maintaining contact with Earth — a job that required constant attention, constant connection, constant proof that we were not alone. Now that connection is severed. Earth is a dead channel. And Sofia has been adrift in a different kind of silence than the rest of us.</p>
-    <p>She does not speak unless spoken to. She eats alone when she can. She volunteers for the longest watches because they give her an excuse to be by herself. I have caught her replaying old recordings of ground control transmissions — the voices of people she will never see again, speaking words that were already obsolete by the time they reached us.</p>
-    <p>The mystery signal has been a lifeline for her. It gives her a reason to listen. A reason to hope that there is something out there besides the void. She spends every waking hour analyzing its patterns, running spectrograms, trying to pry meaning from its encrypted payload. It is the only thing that makes her look alive.</p>
-    <p>I am afraid of what will happen if the signal turns out to be nothing. I am equally afraid of what will happen if it turns out to be something.</p>
-
-    <h3>Commander Elena Voss — The Author</h3>
-    <p>I cope by writing. These logs, this manual, these records — they are my way of imposing order on chaos. If I can describe what happened today, I can make it real. If I can analyze our situation in words, I can understand it. If I can leave a record of our existence, then even if we do not survive, someone will know that we were here.</p>
-    <p>It is a fragile comfort. There are nights when I sit with my hands on the keyboard and nothing comes. The words are there — I can feel them pressing against the inside of my skull — but they refuse to arrange themselves into sentences. Those are the nights when the silence is loudest. When I close my eyes and feel the ship around me like a coffin and wonder if I am writing a log or an epitaph.</p>
-    <p>But I keep writing. Because stopping would mean giving up. And I am not ready to give up yet.</p>
-
-    <h2>The Cost of Silence</h2>
-    <p>We are paying a price for this isolation that I did not fully anticipate. It is not the dramatic, cinematic breakdowns you see in films. It is slower than that. More insidious. It manifests as small things: a conversation that trails off into nothing; a meal eaten in silence because no one has the energy to speak; a joke that lands flat because humor requires a shared context, and our context has become too narrow and too painful to joke about.</p>
-    <p>Chen cried over a wilted leaf yesterday. Not a whole plant — one leaf. She stood in the hydroponics bay with that limp piece of vegetation in her hand and wept like she had lost a child. I held her while she cried and told her it was okay, that we could grow another, that the garden was still healthy. She nodded and wiped her eyes and went back to work. Neither of us mentioned it again.</p>
-    <p>Okonkwo has stopped sleeping in his bunk. He sleeps in the engineering bay now, curled up on a spare mattress next to the main reactor housing. He says it's because the hum of the reactor helps him relax. I think it's because his cabin is too quiet. Too much like the silence he's trying to escape.</p>
-    <p>Rivera has started muttering. It's not words — it's fragmented syllables, half-formed phrases, the linguistic equivalent of static. She doesn't realize she's doing it. I asked Chen if she'd noticed. She said yes. We agreed not to mention it.</p>
-
-    <h2>The Signal Changes Everything</h2>
-    <p>And then there is the signal. Twenty-three days ago, Rivera detected a repeating pattern at 4.2 GHz that did not match any known communications protocol. Since then, we have devoted ourselves to understanding it. The signal has become our collective project — the thing that gives us a reason to gather in the comms bay each evening, to share our findings, to feel like a crew again instead of four strangers trapped in a metal box.</p>
-    <p>The signal is artificial. We have confirmed that. It carries structured data — compressed, encoded, but clearly designed by intelligence. The timing is precise to within microseconds. The origin point is fixed in space, approximately 400,000 kilometers ahead of our current trajectory. It is a beacon. A lighthouse in the dark.</p>
-    <p>We have begun to decode fragments of the payload. The first frame contained what appears to be a greeting — a sequence of prime numbers that any mathematically literate civilization would recognize as intentional. It is the galactic equivalent of saying "hello."</p>
-    <p>I will not pretend to understand the implications. If this signal is from an extraterrestrial intelligence, we are witnessing first contact. If it is from a human source we don't know about, there is a presence in the solar system that has been operating in secrecy. Either way, nothing will be the same after we decode this message.</p>
-    <p>I have authorized a course correction to bring us closer to the source. This was not a decision I made lightly. It consumes reaction mass we may need for emergency maneuvers. It commits us to a trajectory that may take us further from any possible rescue. But I made it anyway, because the signal is the only thing that has cut through the silence. The only thing that has reminded us that we are not alone.</p>
-
-    <h2>The Silence That Remains</h2>
-    <p>But even the signal cannot fill the silence entirely. It is a distraction, not a cure. When the comms screens go dark and we retreat to our cabins, the quiet returns. It settles over each of us like a blanket — heavy, suffocating, persistent.</p>
-    <p>I lie awake at night and listen to the ship. The creak of thermal expansion. The whisper of air circulators. The distant thrum of the reactor. These are the sounds of survival. But underneath them, if I listen closely enough, I can hear something else. The sound of four hearts beating in the void. The sound of four minds trying not to break. The sound of silence, pressing in from all sides, waiting for us to fall.</p>
-    <p>We will not fall. Not tonight. Not tomorrow. Not while there is still a signal to decode, a garden to tend, a ship to repair, a log to write. We will hold the line against the silence for as long as it takes.</p>
-
-    <blockquote>
-      "The silence of deep space is not empty. It is full of everything we have lost and everything we still hope to find. We just have to learn to listen."
-      <strong>— Commander Elena Voss, ISV Odyssey, Sol 212</strong>
-    </blockquote>
-
-    <hr>
-
-    <div class="chapter-nav">
-      <a href="/blog/part-2/daily-log.html">&larr; Daily Log</a>
-      <span style="color:var(--text-muted);font-size:0.75rem;">Continue to Part III</span>
-      <a href="/blog/part-3/signals.html">The Calculus of Rescue &rarr;</a>
-    </div>
-
   </main>
 </div>
+<button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
 <script src="/src/sidebar.js"></script>
 <script src="/src/main.js"></script>
 </body>

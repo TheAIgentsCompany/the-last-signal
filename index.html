@@ -9,96 +9,124 @@
 <link rel="stylesheet" href="/src/style.css">
 </head>
 <body>
+<div class="reading-progress" id="readingProgress"></div>
 <div class="starfield" id="starfield"></div>
 <div class="app">
-  <nav class="sidebar" id="sidebar"></nav>
+  <nav class="sidebar reveal" id="sidebar"></nav>
   <main class="main">
     <div class="hero">
       <h1>THE LAST SIGNAL</h1>
       <p class="tagline">A Space Chronicle by Commander Elena Voss</p>
       <div class="badge-row">
-        <span class="badge accent">✦ Near Future</span>
-        <span class="badge danger">☀ 142M km from Earth</span>
+        <span class="badge danger">✦ Year 2057</span>
+        <span class="badge accent">☀ 142M km from Earth</span>
         <span class="badge green">♺ 4 survivors</span>
-        <span class="badge">📡 347 days of logs</span>
+        <span class="badge warm">📡 7 Chapters</span>
+        <span class="badge">✓ Complete</span>
+      </div>
+    </div>
+
+    <div class="story-stats">
+      <div class="story-stat-card reveal">
+        <div class="stat-value">142M km</div>
+        <div class="stat-label">Distance from Earth</div>
+      </div>
+      <div class="story-stat-card reveal">
+        <div class="stat-value">4</div>
+        <div class="stat-label">Surviving Crew</div>
+      </div>
+      <div class="story-stat-card reveal">
+        <div class="stat-value">347</div>
+        <div class="stat-label">Days of Logs</div>
+      </div>
+      <div class="story-stat-card reveal">
+        <div class="stat-value">47 ly</div>
+        <div class="stat-label">Beyond the Signal</div>
       </div>
     </div>
 
     <hr>
 
-    <h2>The Story</h2>
-    <p>On April 14, 2057, the ISV <em>Odyssey</em> — humanity's first crewed mission to Mars — was struck by a debris cloud. Commander Elena Voss and three surviving crew members found themselves 142 million kilometers from Earth, adrift in a damaged vessel with 405 days of life support and no way home. These are their logs. This is their manual for staying alive. This is <strong>The Last Signal</strong>.</p>
+    <h2 class="reveal">The Story</h2>
+    <p class="reveal">On April 14, 2057, the ISV <em>Odyssey</em> — humanity's first crewed mission to Mars — was struck by a debris cloud. Commander Elena Voss and three surviving crew members found themselves 142 million kilometers from Earth, adrift in a damaged vessel with 405 days of life support and no way home. These are their logs. This is their manual for staying alive. This is <strong>The Last Signal</strong>.</p>
 
     <div class="chapter-grid">
-      <a href="/blog/prologue.html" class="chapter-card">
+      <a href="/blog/prologue.html" class="chapter-card reveal">
         <span class="card-label">Prologue</span>
         <h3>The Arrow and the Void</h3>
         <p>The launch, the mission, and the moment everything changed.</p>
+        <span class="card-read-time">~8 min read</span>
       </a>
-      <a href="/blog/part-1/accident.html" class="chapter-card">
+      <a href="/blog/part-1/accident.html" class="chapter-card reveal">
         <span class="card-label">Part I — Lost</span>
         <h3>The Accident</h3>
         <p>The debris strike, the damage assessment, the first 24 hours.</p>
+        <span class="card-read-time">~12 min read</span>
       </a>
-      <a href="/blog/part-1/ship.html" class="chapter-card">
+      <a href="/blog/part-1/ship.html" class="chapter-card reveal">
         <span class="card-label">Part I</span>
         <h3>The Ship That Remains</h3>
         <p>A full survey of the damaged ISV Odyssey and its remaining systems.</p>
+        <span class="card-read-time">~15 min read</span>
       </a>
-      <a href="/blog/part-2/daily-log.html" class="chapter-card">
+      <a href="/blog/part-2/daily-log.html" class="chapter-card reveal">
         <span class="card-label">Part II — The Art of Staying Alive</span>
         <h3>Daily Log</h3>
         <p>45 entries spanning Days 48–200. Routine, discovery, and slow unraveling.</p>
+        <span class="card-read-time">~12 min read</span>
       </a>
-      <a href="/blog/part-2/silence.html" class="chapter-card">
+      <a href="/blog/part-2/silence.html" class="chapter-card reveal">
         <span class="card-label">Part II</span>
         <h3>The Silence</h3>
         <p>The psychological weight of isolation and a mysterious signal.</p>
+        <span class="card-read-time">~10 min read</span>
       </a>
-      <a href="/blog/part-3/signals.html" class="chapter-card">
+      <a href="/blog/part-3/signals.html" class="chapter-card reveal">
         <span class="card-label">Part III — Signals</span>
         <h3>The Calculus of Rescue</h3>
         <p>An impossible choice at the edge of the solar system.</p>
+        <span class="card-read-time">~14 min read</span>
       </a>
-      <a href="/blog/epilogue.html" class="chapter-card">
+      <a href="/blog/epilogue.html" class="chapter-card reveal">
         <span class="card-label">Epilogue</span>
         <h3>Return</h3>
         <p>Day 1060. What they found at the end of the signal.</p>
+        <span class="card-read-time">~10 min read</span>
       </a>
     </div>
 
     <hr>
 
-    <h2>Space Survival Manual</h2>
-    <p>A practical guide written by Commander Voss for her crew — 6 sections covering life support, emergency EVA, psychology, navigation, rationing, and improvisation. Always accessible. Always being updated.</p>
+    <h2 class="reveal">Space Survival Manual</h2>
+    <p class="reveal">A practical guide written by Commander Voss for her crew — 6 sections covering life support, emergency EVA, psychology, navigation, rationing, and improvisation. Always accessible. Always being updated.</p>
 
     <div class="manual-grid">
-      <a href="/manual/life-support.html" class="manual-card">
+      <a href="/manual/life-support.html" class="manual-card reveal">
         <span class="section-num">Section I</span>
         <h3>Life Support Basics</h3>
         <p>Atmosphere, thermal control, water recycling, emergency reserves.</p>
       </a>
-      <a href="/manual/eva-emergency.html" class="manual-card">
+      <a href="/manual/eva-emergency.html" class="manual-card reveal">
         <span class="section-num">Section II</span>
         <h3>Emergency EVA</h3>
         <p>Suit systems, tether protocol, lost-in-space procedures.</p>
       </a>
-      <a href="/manual/psychological.html" class="manual-card">
+      <a href="/manual/psychological.html" class="manual-card reveal">
         <span class="section-num">Section III</span>
         <h3>Psychological Survival</h3>
         <p>Isolation stress, daily structure, conflict management.</p>
       </a>
-      <a href="/manual/navigation.html" class="manual-card">
+      <a href="/manual/navigation.html" class="manual-card reveal">
         <span class="section-num">Section IV</span>
         <h3>Navigation Without Comms</h3>
         <p>Celestial orientation, dead reckoning, instrument failure.</p>
       </a>
-      <a href="/manual/rationing.html" class="manual-card">
+      <a href="/manual/rationing.html" class="manual-card reveal">
         <span class="section-num">Section V</span>
         <h3>Rationing &amp; Supply Management</h3>
         <p>Food, water, power tiers. Inventory audits. The ethics of scarcity.</p>
       </a>
-      <a href="/manual/improvisation.html" class="manual-card">
+      <a href="/manual/improvisation.html" class="manual-card reveal">
         <span class="section-num">Section VI</span>
         <h3>Improvisation &amp; Repair</h3>
         <p>CO₂ scrubbing, water loop fixes, structural patches, field-expedient tools.</p>
@@ -113,6 +141,8 @@
     </p>
   </main>
 </div>
+<button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
 <script src="/src/main.js"></script>
+<script src="/src/sidebar.js"></script>
 </body>
 </html>

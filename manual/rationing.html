@@ -9,20 +9,31 @@
 <link rel="stylesheet" href="/src/style.css">
 </head>
 <body>
+<div class="reading-progress" id="readingProgress"></div>
 <div class="starfield" id="starfield"></div>
 <div class="app">
   <nav class="sidebar" id="sidebar"></nav>
   <main class="main">
     <a href="/" class="back-link">← Back to Home</a>
+
     <div class="manual-header">
       <span class="icon">⚠</span>
       <h1>Section V: Rationing & Supply Management</h1>
     </div>
 
+    <div class="manual-section-nav">
+      <a href="/manual/life-support.html">I · Life Support</a>
+      <a href="/manual/eva-emergency.html">II · EVA Emergency</a>
+      <a href="/manual/psychological.html">III · Psychological</a>
+      <a href="/manual/navigation.html">IV · Navigation</a>
+      <a href="/manual/rationing.html" class="active">V · Rationing</a>
+      <a href="/manual/improvisation.html">VI · Improvisation</a>
+    </div>
+
     <div class="manual-section">
       <h2>5.1 The Inventory Imperative</h2>
       <p>In a functioning mission, logistics are handled by ground control — they track every gram of food, every milliliter of water, every kilowatt-hour of power across the entire mission timeline. On a disabled ship 142 million kilometers from Earth, we are our own logistics department. If we do not track our consumables with obsessive precision, we will die of a miscalculation that we had months to prevent.</p>
-      <p>The rule is simple: <strong>know exactly what you have, know exactly what you use, and know exactly how long it will last.</strong> Every crew member maintains their own consumption log. Once per week, we cross-reference all logs and update the master inventory. The master inventory is posted on the galley wall and read aloud at the weekly meeting. There are no surprises. </p>
+      <p>The rule is simple: <strong>know exactly what you have, know exactly what you use, and know exactly how long it will last.</strong> Every crew member maintains their own consumption log. Once per week, we cross-reference all logs and update the master inventory. The master inventory is posted on the galley wall and read aloud at the weekly meeting. There are no surprises.</p>
     </div>
 
     <div class="manual-section">
@@ -82,8 +93,20 @@
       </ul>
     </div>
 
+    <div class="chapter-nav-bottom">
+      <a href="/manual/navigation.html">
+        <span class="nav-direction">Previous Section</span>
+        <span class="nav-title">← IV: Navigation Without Comms</span>
+      </a>
+      <div></div>
+      <a href="/manual/improvisation.html">
+        <span class="nav-direction">Next Section</span>
+        <span class="nav-title">VI: Improvisation & Repair →</span>
+      </a>
+    </div>
   </main>
 </div>
+<button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
 <script src="/src/main.js"></script>
 <script src="/src/sidebar.js"></script>
 </body>

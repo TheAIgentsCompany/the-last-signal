@@ -9,14 +9,25 @@
 <link rel="stylesheet" href="/src/style.css">
 </head>
 <body>
+<div class="reading-progress" id="readingProgress"></div>
 <div class="starfield" id="starfield"></div>
 <div class="app">
   <nav class="sidebar" id="sidebar"></nav>
   <main class="main">
     <a href="/" class="back-link">← Back to Home</a>
+
     <div class="manual-header">
       <span class="icon">⚠</span>
       <h1>Section VI: Improvisation & Repair</h1>
+    </div>
+
+    <div class="manual-section-nav">
+      <a href="/manual/life-support.html">I · Life Support</a>
+      <a href="/manual/eva-emergency.html">II · EVA Emergency</a>
+      <a href="/manual/psychological.html">III · Psychological</a>
+      <a href="/manual/navigation.html">IV · Navigation</a>
+      <a href="/manual/rationing.html">V · Rationing</a>
+      <a href="/manual/improvisation.html" class="active">VI · Improvisation</a>
     </div>
 
     <div class="manual-section">
@@ -80,8 +91,20 @@
       <p>A repair that is not logged did not happen. If you are incapacitated and a crew member has to take over your work, the log is their only guide to what you have done. Write clearly, include diagrams where helpful, and never assume that your improvised solution is obvious. In a crisis, the obvious is the first thing that disappears.</p>
     </div>
 
+    <div class="chapter-nav-bottom">
+      <a href="/manual/rationing.html">
+        <span class="nav-direction">Previous Section</span>
+        <span class="nav-title">← V: Rationing & Supply</span>
+      </a>
+      <div></div>
+      <div class="nav-disabled">
+        <span class="nav-direction">Next Section</span>
+        <span class="nav-title">(End of Manual) →</span>
+      </div>
+    </div>
   </main>
 </div>
+<button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
 <script src="/src/main.js"></script>
 <script src="/src/sidebar.js"></script>
 </body>
