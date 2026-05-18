@@ -1,18 +1,19 @@
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=4f8ff7&height=160&section=header&text=THE%20LAST%20SIGNAL&fontSize=50&fontColor=ffffff&animation=fadeIn" width="100%"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=4f8ff7&height=180&section=header&text=THE+LAST+SIGNAL&fontSize=50&fontColor=ffffff&animation=fadeIn&fontAlignY=36" width="100%"/>
 </p>
 
 <p align="center">
-  <b>A Space Chronicle</b><br>
-  <i>Recovered from the emergency data recorder of the ISV <b>Odyssey</b></i>
+  <b>TheAIgentsCompany</b> — A hard sci-fi space chronicle — Commander Elena Voss, adrift at 142M km from Earth
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Year-2057-4f8ff7?style=flat-square" alt="Year 2057"/>
-  <img src="https://img.shields.io/badge/Distance-142M%20km-f87171?style=flat-square" alt="142M km"/>
-  <img src="https://img.shields.io/badge/Crew-4%20survivors-34d399?style=flat-square" alt="4 survivors"/>
-  <img src="https://img.shields.io/badge/Status-Complete-6366F1?style=flat-square" alt="Status Complete"/>
+  <img src="https://img.shields.io/badge/status-active-22C55E?style=flat-square" alt="Active"/>
+  <img src="https://img.shields.io/badge/license-MIT-34d399?style=flat-square" alt="License"/>
+</p>
+
+<p align="center">
+  <b>➡️ <a href="https://story.theaigentscompany.xyz">story.theaigentscompany.xyz</a></b>
 </p>
 
 ---
@@ -58,20 +59,9 @@ A practical guide written by Commander Voss for her crew — 6 sections covering
 ---
 
 <p align="center">
-  <b>Built with</b><br>
-  <img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite"/>
-  <img src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white" alt="Vercel"/>
+  <sub>Developed by <b><a href="https://github.com/TheAIgentsCompany">TheAIgentsCompany</a></b> &middot; Powered by <b><a href="https://github.com/ArtyETH06">Arty</a></b></sub>
 </p>
 
 <p align="center">
-  <b>Live URL</b><br>
-  <a href="https://story-the-ai-gents-company.vercel.app"><b>story-the-ai-gents-company.vercel.app</b></a>
-</p>
-
-<p align="center">
-  <i>Developed by <b>TheAIgentsCompany</b> · Powered by <b>Arty</b></i>
-</p>
-
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=4f8ff7&height=100&section=footer" width="100%"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=4f8ff7&height=120&section=footer" width="100%"/>
 </p>
