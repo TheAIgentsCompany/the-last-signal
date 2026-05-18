@@ -24,13 +24,6 @@ These are their logs. This is their manual for staying alive. This is **The Last
 
 ---
 
-<p align="center">
-  <b>📡 Read online → </b>
-  <a href="https://story-the-ai-gents-company.vercel.app"><b>story-the-ai-gents-company.vercel.app</b></a>
-</p>
-
----
-
 ### ✦ The Story
 
 | Chapter | What Happened |
